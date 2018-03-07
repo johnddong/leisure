@@ -1,0 +1,44 @@
+#floater {
+  position: fixed;
+  z-index: 11;
+}
+#floater .open{
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 44px;
+  position: fixed;
+  z-index: 11;
+  bottom: 30px;
+}
+#floater .inner-open{
+  background: #e60039;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: #fff;
+  font-size: 13px;
+}
+#floater .inner-open img{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all 1s ease;
+}
+#floater .home,
+#floater .setting{
+  transition: all .5s ease;
+  opacity: 0;
+  position: fixed;
+  bottom: 30px;
+  z-index: 0;
+}
+/* active plus icon */
+#floater .active .inner-open img{
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+}
