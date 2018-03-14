@@ -9,8 +9,9 @@ $(function() {
       , $iconOpen = $floater.find('.open')
       , $iconHome = $floater.find('.home')
       , $iconSetting = $floater.find('.setting')
-      , initCoord = $win.width() / 2 - $iconOpen.width() / 2
+      , initCoord = 0
       , travel = 80
+      , icon = 'icon'
       , active = 'active'
       , animationClass = {
         zoomIn: 'zoomIn',
@@ -18,15 +19,27 @@ $(function() {
       },
 
     init = function() {
-      $floater.find('.icon').each(function() {
-        $(this).css({left: initCoord});
+      initCoord = resetInitCoord();
+      $floater.find('.'+icon).css({left: initCoord}).show();
+      $(window).on('resize scroll', function() { // resize & resize onFinished
+        clearTimeout(window.resizedFinished);
+        window.resizedFinished = setTimeout(function(){
+          if ($iconOpen.hasClass(active)) {
+            $iconOpen.toggleClass(active);
+          }
+          initCoord = resetInitCoord();
+          $floater.find('.'+icon).css({left: initCoord});
+        }, 100);
       });
       tween();
     },
 
+    resetInitCoord = function() {
+      return initCoord = $win.width() / 2 - $iconOpen.width() / 2;
+    },
+
     tween = function() {
       $iconOpen.on('click', function() {
-        //$(this).removeClass('zoomIn')
         $(this).toggleClass(active);
         if ($(this).hasClass(active)) {
           $iconOpen.removeClass(animationClass.zoomIn).animateCss(animationClass.rubberBand);
