@@ -16,6 +16,50 @@ ul,li{
   padding: 0 0;
   margin: 0 0;
 }
+.back-to-top {
+  bottom: 60px;
+  display: none;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  position: fixed;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  transform-origin: 100% 50% 0;
+  -o-transform-origin: 100% 50% 0;
+  -webkit-transform-origin: 100% 50% 0;
+  z-index: 99999  ;
+  overflow: hidden;
+  padding: 0;
+  background-color: #de002a57;
+}
+.back-to-top::before {
+  content: "";
+  position: absolute;
+  right: 9px;
+  top: 15px;
+  z-index: 111;
+  width: 0;
+  height: 0;
+  text-align: center;
+  display: inline-block;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #ffffff transparent;
+}
+.back-to-top:hover::before {
+  -webkit-animation: toUpFromUnder 0.5s forwards;
+  -moz-animation: toUpFromUnder 0.5s forwards;
+  animation: toUpFromUnder 0.5s forwards;
+  color: #ffffff;
+}
+.back-to-top.show {
+	display: block !important;
+}
 /*選單*/
 nav{
   background-color: #333;
@@ -26,52 +70,42 @@ nav{
   width: 50px;
   height: 50px;
 }
-.scrollmenu {
+#scrollmenu{
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
+    margin-left: 50px;
 }
-.scrollmenu a {
+#scrollmenu a {
     display: inline-block;
     color: #ddd;
     text-align: center;
-    padding: 14px;
+    padding:12px 14px;
     text-decoration: none;
 }
-.scrollmenu a:active {
+#scrollmenu a:active {
     color: #ffffff;
 }
-/* .scrollbar-dynamic > .scroll-element .scroll-bar{
-  background-color: #333333;
-} */
-nav a.active {
+#scrollmenu a.active {
     color: #ffffff;
 }
 /* scrollbar hover*/
-nav .scrollbar-dynamic > .scroll-element.scroll-x:hover .scroll-element_outer,
-nav .scrollbar-dynamic > .scroll-element.scroll-x.scroll-draggable .scroll-element_outer{
-  height: 16px;
-}
 .scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar{
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  .scrollmenu a{
-    margin-top: 5px;
-    margin-bottom: 10px;
+  nav{
+    padding-bottom: 7px;
+    padding-top: 7px;
   }
-  .scrollmenu a:hover {
+  #scrollmenu a{
+    margin-bottom: 5px;
+  }
+  #scrollmenu a:hover {
       color: #ffffff;
   }
-  nav a.active {
-      color: #ffffff;
-      background-color: #cccccc4d;
-  }
-}
-@media (max-width: 768px){
-  nav .scrollbar-dynamic > .scroll-element.scroll-x:hover .scroll-element_outer,
-  nav .scrollbar-dynamic > .scroll-element.scroll-x.scroll-draggable .scroll-element_outer{
-    height: auto;
+  #scrollmenu .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
+    height: 12px;
   }
 }
 /*
@@ -80,6 +114,11 @@ slideshow
 .main-slideshow{
   background-color: #ddd;
   margin-bottom: 2rem;
+}
+.main-slideshow .slide-item >a{
+  width: inherit;
+  height: inherit;
+  display: block;
 }
 .owl-carousel .owl-item img{
   max-width: 100%;
@@ -292,7 +331,11 @@ slideshow
 .pro-menu-bar .list.active{
   background-image: url('../images/icon/icon-list-active.png');
 }
-
+@media (min-width: 768px) {
+  .pro-menu-bar{
+    display: none;
+  }
+}
 /*商品列表*/
 .product-view .photo{
   border: 1px solid #ddd;
@@ -303,6 +346,9 @@ slideshow
   display: block;
 }
 .product-view .dec a{
+  height: 50px;
+  overflow: hidden;
+  display: block;
   color: #777;
 }
 .product-view .dec a:hover{
@@ -320,6 +366,14 @@ slideshow
 }
 .product-view .sale-price span{
   font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .product-view div[class^="col"] {
+    margin-bottom: 1rem;
+  }
+}
+.product-view .unit-6 .sale-price{
+  display: block;
 }
 /*單格*/
 .product-item div[class^="col"]{
@@ -341,51 +395,49 @@ slideshow
     overflow: hidden;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 992px) {
   .product-view .sale-price{
     display: inline-block;
   }
 }
 /*網格*/
-.product-grid div[class^="col"]{
-  margin-bottom: 1rem;
-}
-.product-grid div[class^="col"]{
+.product-view .grid div[class^="col"]{
   padding-left: 5px;
   padding-right: 5px;
+  margin-bottom: 1rem;
 }
-.product-grid .info{
+.product-view .grid .info{
   padding: 7px;
 }
-.product-grid .dec a{
-  height: 50px;
-  overflow: hidden;
-  display: block;
-}
-.product-grid .pro-grid-style01 .photo{
+/*商品列表的style*/
+.product-view .pro-grid-style01 .photo{
   padding: 2px;
   border: none;
 }
-.product-grid .pro-grid-style01 .cont{
+.product-view .pro-grid-style01 .cont{
   background-color: #fff;
+}
+.product-view .grid .pro-grid-style01 .cont{
   border: 1px solid #ddd;
 }
-.product-grid .pro-grid-style01 .info{
+.product-view .grid .pro-grid-style01 .info{
   padding: 15px;
 }
 @media (min-width: 768px) {
-  .product-grid div[class^="col"]{
+  .product-view div[class^="col"]{
     padding-left: 5px;
     padding-right: 5px;
   }
-  .product-grid.pro-grid-style01 div[class^="col"]{
-    padding-left: 10px;
-    padding-right: 10px;
+  .product-view .pro-grid-style01 .info{
+    padding: 15px;
+  }
+  .product-view .list .pro-grid-style01 .cont{
+    border: 1px solid #ddd;
   }
 }
 /*條列*/
  @media (max-width: 768px) {
-   .product-list div[class^="col"]{
+   .product-view .list div[class^="col"]{
      border-top: 1px solid #ddd;
      padding-top: 1.33rem;
      padding-bottom: 1.33rem;
@@ -393,17 +445,37 @@ slideshow
      padding-left: 0px;
      padding-right: 0px;
    }
-   .product-list .photo{
+   .product-view .list .photo{
      width: 30%;
      height: auto;
      float: left;
      padding: 2px;
    }
-   .product-list .info{
+   .product-view .list .info{
      float: left;
      width: 65%;
      margin-left: 5%;
    }
+ }
+ /*顯示更多*/
+ .more-section{
+   margin-bottom: 100px;
+ }
+ #more-btn{
+  color: #fff;
+  background-color: #d00f2b;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 2px 3px 1px 0px #b4b1b1;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 20px;
+ }
+ #more-btn:hover{
+   background-color: #cb142e;
+   box-shadow: none;
  }
 /*footer*/
 footer{
@@ -420,4 +492,49 @@ footer ul li{
 footer a:hover,
 footer .copyright{
   color: #ff7496;
+}
+
+/*loader*/
+.spinner {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  text-align: center;
+
+  -webkit-animation: sk-rotate 2.0s infinite linear;
+  animation: sk-rotate 2.0s infinite linear;
+}
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #e60039;
+  border-radius: 100%;
+
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
 }
