@@ -23,6 +23,9 @@ ul,li{
   padding: 0 1em;
   margin-bottom: 90px;
 }
+.content-with{
+  width: 100%;
+}
 @media (min-width: 992px) {
   .main-container{
     margin-bottom: 0px;
@@ -47,6 +50,7 @@ header .logo{
 header #search{
   text-align: right;
   padding-top: 13px;
+  padding-right: 0;
 }
 header #search i{
   color: #fff;
@@ -177,7 +181,7 @@ header #search i{
 nav
 */
 .nav{
-  display: flow-root;
+  overflow: hidden;
   background-color: #333;
 }
 nav .btn{
@@ -262,6 +266,7 @@ nav .btn a{
   background: transparent;
   border: none;
   border-right: 1px solid #777;
+  border-radius: 0px;
   outline: none;
 }
 @media (min-width: 992px) {
@@ -534,6 +539,7 @@ slideshow
   margin: 10px 0;
 }
 .promo-section .timer span{
+  width: 25px;
   background-color: #000;
   color: #fff;
   padding: 4px;
@@ -654,7 +660,8 @@ footer{
   z-index: 990;
 }
 .fixed-footer{
-  display: flow-root;
+  overflow: hidden;
+  /* display: flow-root; */
   background-color: #fff;
   padding: 10px 0;
 }
