@@ -2,310 +2,625 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>有閑</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet" tyle="text/css">
-  <link href="css/animate.css" rel="stylesheet" tyle="text/css">
-  <link href="css/promo/floater.css" rel="stylesheet" tyle="text/css">
-  <link href="css/leisure.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <link href="beango/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="beango/css/simple-sidebar.css" rel="stylesheet" type="text/css">
+  <link href="beango/css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+  <link href="beango/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="beango/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" tyle="text/css">
+  <link href="beango/css/animate.css" rel="stylesheet" tyle="text/css">
+  <link href="beango/css/leisure.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="beango/js/jquery-2.1.4.min.js"></script>
 </head>
-<body id="index">
-  <header></header>
-  <nav>
-    <div class="icon-logo">
-      <a href="javascript:void(0);"><img src="images/icon/logo.png" alt="有閒"></a>
+<body>
+  <div id="wrapper">
+    <header>
+      <div class="row content-with">
+        <div id="menu" class="col">
+          <button class="navbar-toggler" id="navbarSideButton" type="button">&#9776;</button>
+          </div>
+        <div class="col logo">
+          <a href="#"><img src="beango/images/logo.png" alt="有閑"></a>
+        </div>
+        <div id="search" class="col">
+          <a href="#"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+        </div>
+        <div id="menu-list" class="col">
+          <ul>
+            <li class="shop"><a href="javascript:void(0);">我的店舖</a></li>
+            <li class="dollar"><a href="javascript:void(0);">賺導購金</a></li>
+            <li class="member"><a href="javascript:void(0);">購物會員</a></li>
+            <li class="cart"><a href="javascript:void(0);">購物車</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </header>
+    <!-- pc nav -->
+    <div class="nav">
+      <div class="content-with">
+        <nav>
+          <div class="btn">
+            <a href="javascript:void(0);">女人節</a>
+          </div>
+          <div id="scrollmenu" class="content">
+            <a href="index.html?nav=01" data-nav="01">NEW</a>
+            <a href="index.html?nav=02" data-nav="02">3C數位</a>
+            <a href="index.html?nav=03" data-nav="03">居家用品</a>
+            <a href="index.html?nav=04" data-nav="04">母嬰玩具</a>
+            <a href="index.html?nav=01" >NEW</a>
+            <a href="index.html?nav=02" >3C數位</a>
+            <a href="index.html?nav=03" >居家用品</a>
+            <a href="index.html?nav=04" >母嬰玩具</a>
+            <a href="index.html?nav=01" >NEW</a>
+            <a href="index.html?nav=02" >3C數位</a>
+            <a href="index.html?nav=03" >居家用品</a>
+            <a href="index.html?nav=04" >母嬰玩具</a>
+            <a href="index.html?nav=01" >NEW</a>
+            <a href="index.html?nav=02" >3C數位</a>
+            <a href="index.html?nav=03" >居家用品</a>
+            <a href="index.html?nav=04" >母嬰玩具</a>
+          </div>
+        </nav>
+        <div id="searchbar" class="search-form">
+          <form class="" name="search" action="" method="post">
+            <div class="wrap">
+              <select name="type">
+                <option value="product">商品</option>
+                <option value="shop">店家</option>
+              </select>
+              <input type="text" name="k" autocomplete="off">
+              <button type="submit" class="search-button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
-    <div id="scrollmenu" class=" content">
-      <a href="index.html?nav=01" data-nav="01">NEW</a>
-      <a href="index.html?nav=02" data-nav="02">3C數位</a>
-      <a href="index.html?nav=03" data-nav="03">居家用品</a>
-      <a href="index.html?nav=04" data-nav="04">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-      <a href="javascript:(0);">母嬰玩具</a>
-    </div>
-  </nav>
-  <div class="content">
-    <!-- slideshow -->
-		<div class="main-slideshow">
-			<!-- 聚焦模式 -->
-			<div class="owl-carousel owl-theme nav-style1 owl-loaded owl-drag" data-height="400">
-				<div class="slide-item item-background" data-background="images/carousel01.jpeg">
+    <!--end of pc nav -->
+    <!-- 電視牆 -->
+    <div class="main-slideshow">
+      <!-- 聚焦模式 -->
+      <div class="owl-carousel owl-theme nav-style1 owl-loaded owl-drag" data-height="400">
+        <div class="slide-item item-background" data-background="beango/images/banner-1600x600.jpg">
           <a href="https://15fun.jollybuy.com/">
-  					<div class="slide-img">
-              <img src="images/carousel01.jpeg" alt="">
+            <div class="slide-img">
+              <img src="beango/images/banner-1600x600.jpg" alt="跨境電商領導品牌">
             </div>
           </a>
-				</div>
-				<div class="slide-item item-background" data-background="images/carousel02.jpeg">
+        </div>
+        <div class="slide-item item-background" data-background="beango/images/banner-1600x600.jpg">
           <a href="https://15fun.jollybuy.com/">
-  					<div class="slide-img"><img src="images/carousel02.jpeg" alt=""></div>
+            <div class="slide-img"><img src="beango/images/banner-1600x600.jpg" alt="跨境電商領導品牌"></div>
           </a>
-				</div>
-			</div>
-			<!--/ 聚焦模式 -->
+        </div>
+      </div>
+      <!--/ 聚焦模式 -->
       <!-- 全景模式 -->
       <!-- <div class="owl-carousel owl-theme nav-style1 owl-loaded owl-drag" data-height="400">
-				<div class="slide-item item-background">
+        <div class="slide-item item-background">
           <a href="javascript:(0)">
             <div class="slide-img">
               <img src="images/carousel01.jpeg" alt="">
             </div>
           </a>
-				</div>
-				<div class="slide-item item-background">
+        </div>
+        <div class="slide-item item-background">
           <a href="javascript:(0)">
             <div class="slide-img">
               <img src="images/carousel02.jpeg" alt="">
             </div>
           </a>
-				</div>
-			</div> -->
-			<!--/ 全景模式 -->
-		</div>
-		<!--/ slideshow -->
-  </div>
-  <div class="container">
-    <!-- 廣告 -->
-    <div class="banner">
-      <div class="row justify-content-between">
-        <div class="col-md-6 col-12 justify-content-center align-self-center">
-          <a href="https://herbuy.jollybuy.com/">
-            <img class="img-fluid" src="images/580x400-03.jpg" alt="">
-          </a>
         </div>
-        <div class="col-md-6 col-12 justify-content-center align-self-center">
-          <a href="https://niveanivea.jollybuy.com">
-            <img class="img-fluid" src="images/580x400-04.jpg" alt="">
-          </a></div>
-      </div>
-      <div class="row justify-content-between">
-        <div class="col-md-6 col-12 justify-content-center align-self-center">
-          <a href="https://jstaiwan.jollybuy.com/">
-            <img class="img-fluid" src="images/580x400-05.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-12 justify-content-center align-self-center">
-          <a href="https://herbuy.jollybuy.com/">
-            <img class="img-fluid" src="images/580x400-03.jpg" alt="">
-          </a>
-        </div>
-      </div>
+      </div> -->
+      <!--/ 全景模式 -->
     </div>
-    <div class="pro-menu-bar">
+    <!-- end of 電視牆 -->
+    <div class="main-container content-with">
+      <!-- 導購banner -->
+      <div class="row">
+        <div class="col-6 col-sm-6"><a href="javascript:void(0);"><img class="img-fluid" src="beango/images/img01.png" alt="我要導購閒錢一直賺"></a></div>
+        <div class="col-6 col-sm-6"><a href="javascript:void(0);"><img class="img-fluid" src="beango/images/img01.png" alt="我要導購閒錢一直賺"></a></div>
+      </div>
+      <!-- end of 導購banner -->
+      <!-- 爆爆專區 -->
+      <div class="promo-limited-time promo-section">
+        <div class="header">
+          <div class="sub-title">
+            <span class="icon-clock">爆爆專區</span>
+          </div>
+          <div id="countdown" class="timer" data-distance="5000000">
+          </div>
+        </div>
+        <div class="bodyer">
+          <div class="owl-carousel owl-theme slider-item2">
+            <div class="item"><a href="javascript:void(0);"><img src="beango/images/banner01.jpg" alt="信任樂利成就非凡"></a></div>
+            <div class="item"><a href="javascript:void(0);"><img src="beango/images/banner01.jpg" alt="信任樂利成就非凡"></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- end of 爆爆專區 -->
+      <!-- 導購推推 -->
+      <div class="promo-section">
+        <div class="header">
+          <div class="sub-title">
+            <span class="icon-money">導購專區</span>
+          </div>
+          <div class="desc">立享現金回饋</div>
+        </div>
+        <div class="bodyer">
+          <div class="owl-carousel owl-theme slider-item2 product-defult grid">
+            <div class="item pro-grid-style01">
+              <div class="cont">
+                <div class="photo">
+                  <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                    <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                  <div class="fixed-price">1,800</div>
+                  <div class="sale-price">$<span>1,699</span></div>
+                  <div class="shop">吉室商行</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of 導購推推 -->
+      <!-- 每日好店 -->
+      <div class="promo-good-shop row">
+        <div class="promo-section col-lg-6 section1">
+          <div class="header">
+            <div class="sub-title">
+              <span class="icon-finger">每日好店</span>
+            </div>
+            <div class="desc">TOP商家好康推薦</div>
+          </div>
+          <div class="bodyer">
+            <img class="ad img-fluid" src="beango/images/banner01.jpg" alt="">
+            <div class="owl-carousel owl-theme slider-item3 product-defult grid">
+              <div class="item">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item see-more">
+                <div class="arrow"></div>
+                <a href="#">
+                  <span>查看更多</span>SEE MORE
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="promo-section col-lg-6 section2">
+          <div class="bodyer">
+            <img class="ad img-fluid" src="beango/images/banner01.jpg" alt="">
+            <div class="owl-carousel owl-theme slider-item3 product-defult grid">
+              <div class="item">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro03.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of 每日好店 -->
+      <!-- 閑編推薦 -->
+      <div class="promo-recommend row">
+        <div class="promo-section col-lg-6 section1">
+          <div class="header">
+            <div class="sub-title">
+              <span class="icon-megaphone">閑編推薦</span>
+            </div>
+            <div class="desc">編輯精選必備商品</div>
+          </div>
+          <div class="bodyer">
+            <div class="headline">標題在這裡</div>
+            <p>內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+            <div class="owl-carousel owl-theme slider-item4">
+              <div class="item"><a href="javascript:void(0);"><img src="beango/images/pro03.jpg" alt=""></a></div>
+              <div class="item"><a href="javascript:void(0);"><img src="beango/images/pro03.jpg" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="promo-section col-lg-6 section2">
+          <div class="bodyer">
+            <div class="headline">標題在這裡</div>
+            <p>內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</p>
+            <div class="owl-carousel owl-theme slider-item4">
+              <div class="item"><a href="javascript:void(0);"><img src="beango/images/pro03.jpg" alt=""></a></div>
+              <div class="item"><a href="javascript:void(0);"><img src="beango/images/pro03.jpg" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of 閑編推薦 -->
+      <!-- 每日熱門 -->
+      <div class="promo-hot promo-section">
+        <div class="header">
+          <div class="sub-title">
+            <span class="icon-fire">每日熱門</span>
+          </div>
+          <div class="desc">最多人搶的熱銷品</div>
+        </div>
+        <div class="bodyer product-defult product-list">
+          <div class="row">
+            <div class="cont col-lg-4">
+              <div class="photo">
+                <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                  <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                <div class="price-group">
+                  <div class="fixed-price">1,800</div>
+                  <div class="sale-price">$<span>1,699</span></div>
+                </div>
+                <div class="shop">吉室商行</div>
+              </div>
+            </div>
+            <div class="cont col-lg-4">
+              <div class="photo">
+                <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                  <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                <div class="price-group">
+                  <div class="fixed-price">1,800</div>
+                  <div class="sale-price">$<span>1,699</span></div>
+                </div>
+                <div class="shop">吉室商行</div>
+              </div>
+            </div>
+            <div class="cont col-lg-4">
+              <div class="photo">
+                <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                  <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                <div class="price-group">
+                  <div class="fixed-price">1,800</div>
+                  <div class="sale-price">$<span>1,699</span></div>
+                </div>
+                <div class="shop">吉室商行</div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="cont col-lg-4">
+              <div class="photo">
+                <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                  <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                <div class="price-group">
+                  <div class="fixed-price">1,800</div>
+                  <div class="sale-price">$<span>1,699</span></div>
+                </div>
+                <div class="shop">吉室商行</div>
+              </div>
+            </div>
+            <div class="cont col-lg-4">
+              <div class="photo">
+                <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                  <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                <div class="price-group">
+                  <div class="fixed-price">1,800</div>
+                  <div class="sale-price">$<span>1,699</span></div>
+                </div>
+                <div class="shop">吉室商行</div>
+              </div>
+            </div>
+            <div class="cont col-lg-4">
+              <div class="photo">
+                <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                  <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                </a>
+              </div>
+              <div class="info">
+                <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                <div class="price-group">
+                  <div class="fixed-price">1,800</div>
+                  <div class="sale-price">$<span>1,699</span></div>
+                </div>
+                <div class="shop">吉室商行</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of 每日熱門 -->
+      <!-- 每日新發現 -->
+      <div class="promo-discover promo-section">
+        <div class="header">
+          <div class="sub-title">
+            <span class="icon-lamp">每日新發現</span>
+          </div>
+          <div class="desc">新奇好物最近上架</div>
+        </div>
+        <div class="bodyer">
+          <div class="product-defult grid">
+            <div class="row pro-grid-style01">
+              <div class="item col-6 col-lg-3">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                    <div class="shop">吉室商行</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-6 col-lg-3">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                    <div class="shop">吉室商行</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-6 col-lg-3">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                    <div class="shop">吉室商行</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-6 col-lg-3">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                    <div class="shop">吉室商行</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-6 col-lg-3">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                    <div class="shop">吉室商行</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-6 col-lg-3">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                    <div class="shop">吉室商行</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-6 col-lg-3">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                    <div class="shop">吉室商行</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item col-6 col-lg-3">
+                <div class="cont">
+                  <div class="photo">
+                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                      <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="info">
+                    <div class="desc"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
+                    <div class="fixed-price">1,800</div>
+                    <div class="sale-price">$<span>1,699</span></div>
+                    <div class="shop">吉室商行</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of 每日新發現 -->
+    </div>
+    <footer>
+      <div class="fixed-footer">
+        <ul>
+          <li class="goback"><a href="javascript:void(0);">回首頁</a></li>
+          <li class="dollar"><a href="javascript:void(0);">賺導購金</a></li>
+          <li class="shop"><a href="javascript:void(0);">我的店舖</a></li>
+          <li class="member"><a href="javascript:void(0);">購物會員</a></li>
+          <li class="cart"><a href="javascript:void(0);">購物車</a></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <ul>
+          <li><a href="#">活動公告</a></li>
+          <li><a href="#">關於有閑</a></li>
+          <li><a href="#">隱私權政策</a></li>
+          <li><a href="#">有閑條款</a></li>
+          <li><a href="#">聯絡我們</a></li>
+        </ul>
+        <div class="copy-right">© 2018 JollyBuy Limited</div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="javascript:void(0);"></a>
+  </div>
+
+<!-- /#wrapper -->
+<!-- left slider content -->
+  <div id="navbarSide" class="navbar-side">
+    <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+    <div><a href="javascript:void(0);">全站分類</a></div>
+    <div>
       <ul>
-        <li class="list" data-type="list"></li>
-        <li class="grid active" data-type="grid"></li>
-        <!-- <li class="item"></li> -->
+        <li><a class="digital" href="javascript:void(0);">數位</a></li>
+        <li><a class="food" href="javascript:void(0);">美食</a></li>
+        <li><a class="home" href="javascript:void(0);">居家</a></li>
+        <li><a class="fashion" href="javascript:void(0);">時尚</a></li>
+        <li><a class="casual" href="javascript:void(0);">休閒</a></li>
+        <li><a class="mom" href="javascript:void(0);">母嬰</a></li>
       </ul>
     </div>
-    <!-- 首頁大商品列表 -->
-    <div class="product-view">
-      <div id="product-content" class="grid">
-          <div class="unit-4 pro-grid-style01">
-            <div class="row justify-content-between">
-              <div class="col-sm-3 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
-                      <img class="img-fluid" src="images/pro/pro02.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
-                    <div class="fixed-price">1,800</div>
-                    <div class="sale-price"><span>$</span>1,699</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://bioessence.jollybuy.com/Goods/Detail/20171225183629127">
-                      <img class="img-fluid" src="images/pro/pro02.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://bioessence.jollybuy.com/Goods/Detail/20171225183629127">Bio-essence碧歐斯青春緊膚霜含蜂王漿</a></div>
-                    <div class="fixed-price">1,620</div>
-                    <div class="sale-price"><span>$</span>1,599</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://naruko.jollybuy.com/Goods/Detail/20171222144602776">
-                      <img class="img-fluid" src="images/pro/pro02.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://naruko.jollybuy.com/Goods/Detail/20171222144602776">NARUKO牛爾茶樹痘痘粉刺調理遮瑕膏3g</a></div>
-                    <div class="fixed-price">420</div>
-                    <div class="sale-price"><span>$</span>399</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://babyoushop.jollybuy.com/Goods/Detail/20180131115339058">
-                      <img class="img-fluid" src="images/pro/pro02.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://babyoushop.jollybuy.com/Goods/Detail/20180131115339058">babyou姊妹淘紅薑黃先生 黑蔘版 100顆/瓶</a></div>
-                    <div class="fixed-price">1,620</div>
-                    <div class="sale-price"><span>$</span>1,513</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="unit-6 pro-grid-style01">
-            <div id="more-list" class="row">
-              <div class="col-lg-2 col-md-4 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://babyoushop.jollybuy.com/Goods/Detail/A010100004">
-                      <img class="img-fluid" src="images/pro/pro03.jpg" alt="babyou姊妹淘 紅薑黃先生 京都限定100粒/瓶">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://babyoushop.jollybuy.com/Goods/Detail/A010100004">babyou姊妹淘 紅薑黃先生 京都限定100粒/瓶</a></div>
-                    <div class="fixed-price">900</div>
-                    <div class="sale-price"><span>$</span>850</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-4 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://jstaiwan.jollybuy.com/Goods/Detail/20171221155855222">
-                      <img class="img-fluid" src="images/pro/pro03.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://jstaiwan.jollybuy.com/Goods/Detail/20171221155855222">吉室 吉好運 牛軋米餅禮盒雙口味16入/盒</a></div>
-                    <div class="fixed-price">420</div>
-                    <div class="sale-price"><span>$</span>399</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-4 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
-                      <img class="img-fluid" src="images/pro/pro03.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">日本境內大王阿福狗-黏貼型 S / M / L / XL</a></div>
-                    <div class="fixed-price">1,800</div>
-                    <div class="sale-price"><span>$</span>1,699</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-4 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://bioessence.jollybuy.com/Goods/Detail/20171225183629127">
-                      <img class="img-fluid" src="images/pro/pro03.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://bioessence.jollybuy.com/Goods/Detail/20171225183629127">Bio-essence碧歐斯青春緊膚霜含蜂王漿</a></div>
-                    <div class="fixed-price">1,620</div>
-                    <div class="sale-price"><span>$</span>1,599</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-4 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://naruko.jollybuy.com/Goods/Detail/20171222144602776">
-                      <img class="img-fluid" src="images/pro/pro03.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://naruko.jollybuy.com/Goods/Detail/20171222144602776">NARUKO牛爾茶樹痘痘粉刺調理遮瑕膏3g</a></div>
-                    <div class="fixed-price">420</div>
-                    <div class="sale-price"><span>$</span>399</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-2 col-md-4 col-6">
-                <div class="cont">
-                  <div class="photo">
-                    <a href="https://babyoushop.jollybuy.com/Goods/Detail/20180131115339058">
-                      <img class="img-fluid" src="images/pro/pro03.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="info">
-                    <div class="dec"><a href="https://babyoushop.jollybuy.com/Goods/Detail/20180131115339058">babyou姊妹淘紅薑黃先生 黑蔘版 100顆/瓶</a></div>
-                    <div class="fixed-price">1,620</div>
-                    <div class="sale-price"><span>$</span>1,513</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="more-section row justify-content-center">
-      <input id="page" type="hidden" value="0">
-      <button id="more-btn" type="button" name="more">顯示更多</button>
-    </div>
+    <div><a href="javascript:void(0);">活動公告</a></div>
+    <div><a href="javascript:void(0);">關於我們</a></div>
+    <div><a href="javascript:void(0);">聯絡我們</a></div>
   </div>
-  <footer>
-    <ul>
-      <li>聯絡我們</li>
-      <li><a href="mailto:Jollybuy_cs@jollywiz.com">Jollybuy_cs@jollywiz.com</a></li>
-      <li class="copyright">© 2017 Powered By JollyBuy</li>
-    </ul>
-  </footer>
-  <a class="back-to-top" href="#"></a>
-  <!-- floater -->
-  <div id="floater">
-    <div class="icon open animated zoomIn">
-      <div class="icon-inner"><span></span></div>
-    </div>
-    <div class="icon home">
-      <div class="icon-inner"><a href="https://dev-www.jollybuy.com/beango/"></a></div>
-    </div>
-    <div class="icon setting">
-      <div class="icon-inner"><a href="https://admin.jollybuy.com/Home/Index"></a></div>
-    </div>
-  </div>
-  <!--/ floater-->
-<script type="text/javascript" src="js/bootstrap.min.js" ></script>
-<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/floater.js"></script>
-<script type="text/javascript" src="js/leisure.js"></script>
+<!--end of left slider content -->
+  <script type="text/javascript" src="beango/js/bootstrap.min.js" ></script>
+  <script type="text/javascript" src="beango/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="beango/js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="beango/js/digit_countdown.js"></script>
+  <script type="text/javascript" src="beango/js/leisure.js"></script>
 </body>
 </html>
