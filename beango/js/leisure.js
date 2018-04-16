@@ -23,8 +23,14 @@
    /*nav highlight*/
     var
     $menu = $('#scrollmenu'),
+    $submenu =  $('.scrollmenu'),
     $menuItem = $menu.find('a'),
-    nav_value = getParam('nav');
+    nav_value = getParam('nav'),
+    menu_options = {
+      axis:"x",
+      theme:"minimal",
+      alwaysShowScrollbar: 1
+    };
     $menuItem.each(function(){
       if($(this).data('nav') == nav_value ){
         $(this).addClass('active');
@@ -34,11 +40,8 @@
     });
 
   // nav scrollbar style
-  $("#scrollmenu").mCustomScrollbar({
-    axis:"x",
-    theme:"minimal",
-    alwaysShowScrollbar: 1
-  });
+  $menu.mCustomScrollbar(menu_options);
+  $submenu.mCustomScrollbar(menu_options);
 
   /*側欄選單*/
   var
@@ -172,4 +175,36 @@
       $('html, body').animate({scrollTop : 0},800);
       return false;
   });
+
+  /***--分類頁--***/
+  var
+  $filter = $('.filter-wrapper')
+  $price = $filter.find('.price-block');
+  $filter.find('.item').on('click',function(){
+    var $this = $(this);
+    if($this.hasClass('active')){
+      $this.removeClass('active');
+    }else{
+      $this.addClass('active').siblings().removeClass('active');
+      $price.find('.fa').removeClass('active');
+    }
+  });
+  $price.on('click',function(){
+    var $this = $(this),
+        $active = $this.find('.active');
+    $this.addClass('active').siblings().removeClass('active');
+    if($active.length == 0){
+      $this.find('.fa-caret-up').addClass('active');
+    }else{
+      var fa = $this.find('.fa');
+      $.each(fa,function(){
+        if($(this).hasClass('active')){
+          $(this).removeClass('active');
+        }else{
+          $(this).addClass('active');
+        }
+      });
+    }
+  });
+
 })(jQuery);

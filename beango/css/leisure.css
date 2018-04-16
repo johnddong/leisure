@@ -13,9 +13,6 @@ a,a:link,a:visited{
   color: #777;
   text-decoration: none;
 }
-a:hover{
-  color: #e60039;
-}
 ul,li{
   list-style-type: none;
   padding: 0 0;
@@ -29,6 +26,7 @@ ul,li{
   width: 100%;
 }
 @media (min-width: 992px) {
+  a:hover{color: #e60039;}
   .main-container{
     margin-bottom: 0px;
   }
@@ -197,13 +195,17 @@ nav .btn a{
   font-size: 13px;
   color: #fff;
 }
-#scrollmenu{
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-    margin-left: 75px;
+#scrollmenu a{
+  width: 41px;
+  overflow: hidden;
 }
-#scrollmenu a {
+#scrollmenu,
+.scrollmenu{
+  overflow: auto;
+  white-space: nowrap;
+}
+#scrollmenu a,
+.scrollmenu a{
     display: inline-block;
     color: #ddd;
     text-align: center;
@@ -213,9 +215,12 @@ nav .btn a{
 #scrollmenu a.active{
     color: #ffffff;
 }
-/* scrollbar hover*/
 .scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar{
   cursor: pointer;
+}
+.nav #scrollmenu{
+    background-color: #333;
+    margin-left: 75px;
 }
 @media (min-width: 992px) {
   nav{
@@ -223,17 +228,22 @@ nav .btn a{
     padding-bottom: 7px;
     padding-top: 7px;
   }
-  #scrollmenu{
+  .nav #scrollmenu{
     width: 515px;
     margin-left:85px;
   }
   #scrollmenu a{
+    width: auto;
+  }
+  #scrollmenu a,
+  .scrollmenu a{
     margin-bottom: 5px;
   }
   #scrollmenu a:hover {
       color: #ffffff;
   }
-  #scrollmenu .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
+  #scrollmenu .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar,
+  .scrollmenu .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
     height: 12px;
   }
 }
@@ -281,7 +291,6 @@ nav .btn a{
 }
 /*product style*/
 .product-defult .fixed-price{
-  width: 60px;
   vertical-align:bottom;
   overflow: hidden;
   display: inline-block;
@@ -294,15 +303,18 @@ nav .btn a{
   margin-left: 2px;
 }
 .product-defult .sale-price span{
-  font-size: 2.15em;
+  font-size: 25px;
   display: inline-block;
 }
 .product-defult .shop{
   margin-top: 5px;
 }
 .product-defult .desc{
-  height: 60px;
+  height: 43px;
   overflow: hidden;
+}
+.product-defult .price-group{
+  font-size: 18px;
 }
 /*網格*/
 .grid .cont{
@@ -576,9 +588,7 @@ slideshow
   margin-left: 0;
 }
 .promo-section .grid .sale-price span{
-  font-size: 1.7em;
-  width: 61px;
-  overflow: hidden;
+  font-size: 25px;
 }
 /*爆爆專區*/
 .promo-limited-time .header{
@@ -602,6 +612,9 @@ slideshow
   background-color: #fff;
   border: solid 1px #C1C1C1;
   padding: 2px;
+}
+.promo-good-shop .grid .sale-price span{
+  font-size: 22px;
 }
 .promo-recommend .bodyer{
   padding: 0 10px 10px 10px;
