@@ -182,12 +182,8 @@
   $price = $filter.find('.price-block');
   $filter.find('.item').on('click',function(){
     var $this = $(this);
-    if($this.hasClass('active')){
-      $this.removeClass('active');
-    }else{
-      $this.addClass('active').siblings().removeClass('active');
-      $price.find('.fa').removeClass('active');
-    }
+    $this.addClass('active').siblings().removeClass('active');
+    $price.find('.fa').removeClass('active');
   });
   $price.on('click',function(){
     var $this = $(this),
@@ -195,12 +191,18 @@
     $this.addClass('active').siblings().removeClass('active');
     if($active.length == 0){
       $this.find('.fa-caret-up').addClass('active');
+      location.href = 'category.html?filter=descending';
     }else{
       var fa = $this.find('.fa');
       $.each(fa,function(){
         if($(this).hasClass('active')){
           $(this).removeClass('active');
         }else{
+          if($(this).hasClass('fa-caret-up')){
+            location.href = 'category.html?filter=descending';
+          }else{
+            location.href = 'category.html?filter=ascending';
+          }
           $(this).addClass('active');
         }
       });
