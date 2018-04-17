@@ -131,7 +131,6 @@
       });
     }
   /*end of 電視牆*/
-
   $('.slider-item2').owlCarousel({
     loop:true,
     margin:10,
@@ -144,21 +143,34 @@
             items:4
         }
     },
-    navText: ['<span class="flaticon-arrows-left"></span>','<span class="flaticon-arrows-right"></span>']
+    navText: ['<i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>']
   });
   $('.slider-item3').owlCarousel({
     items:3,
     loop:false,
     margin:10,
     nav:true,
-    navText: ['<span class="flaticon-arrows-left"></span>','<span class="flaticon-arrows-right"></span>']
+    navText: ['<i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>']
   });
   $('.slider-item4').owlCarousel({
     items:4,
     loop:true,
     margin:10,
     nav:true,
-    navText: ['<span class="flaticon-arrows-left"></span>','<span class="flaticon-arrows-right"></span>']
+    navText: ['<i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>']
+  });
+
+  $('.owl-carousel').on('mouseenter',function(){
+    var $this = $(this);
+    $this.find('.owl-nav.disabled').css('display','block');
+    $this.find('.owl-nav .owl-next').css('display','block');
+    $this.find('.owl-nav .owl-prev').css('display','block');
+  });
+  $('.owl-carousel').on('mouseleave',function(){
+    var $this = $(this);
+    $this.find('.owl-nav.disabled').css('display','none');
+    $this.find('.owl-nav .owl-next').css('display','none');
+    $this.find('.owl-nav .owl-prev').css('display','none');
   });
 
   //back to top

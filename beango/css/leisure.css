@@ -368,6 +368,26 @@ nav .btn a{
   max-height: 60px;
 }
 /*
+  owl-nav
+*/
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev{
+  color: #ccc;
+  display: none;
+  position: absolute;
+  top:35%;
+}
+.owl-carousel .owl-nav .owl-next:hover,
+.owl-carousel .owl-nav .owl-prev:hover{
+  color:#777;
+}
+.owl-carousel .owl-nav .owl-prev{
+  left: -12px;
+}
+.owl-carousel .owl-nav .owl-next{
+  right: -12px;
+}
+/*
 slideshow
 */
 .main-slideshow{
