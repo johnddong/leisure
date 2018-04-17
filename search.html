@@ -11,10 +11,10 @@
   <link href="beango/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" tyle="text/css">
   <link href="beango/css/animate.css" rel="stylesheet" tyle="text/css">
   <link href="beango/css/leisure.css" rel="stylesheet" type="text/css">
-  <link href="beango/css/leisure-category.css?v=1" rel="stylesheet" type="text/css">
+  <link href="beango/css/leisure-search.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="beango/js/jquery-2.1.4.min.js"></script>
 </head>
-<body id="category">
+<body id="search-page">
   <div id="wrapper">
     <header>
       <div class="row content-with">
@@ -82,90 +82,123 @@
     </div>
     <!--end of pc nav -->
     <div class="main-container content-with">
-      <div class="sub-nav">
-      <div class="scrollmenu">
-      <!--第二層分類-數位 -->
-      <!-- <div class="digital">
-        <a class="phone active" href="javascript:void(0);">手機周邊</a>
-        <a class="tablet-pc" href="javascript:void(0);" >平板與周邊</a>
-        <a class="camera" href="javascript:void(0);">相機與周邊</a>
-        <a class="computer" href="javascript:void(0);" >桌機/筆電與周邊</a>
-        <a class="life" href="javascript:void(0);" >生活家電</a>
-        <a class="kitchen" href="javascript:void(0);" >廚房家電</a>
-        <a class="audio" href="javascript:void(0);" >影音家電</a>
-        <a class="appliance" href="javascript:void(0);" >小家電</a>
-      </div> -->
-      <!--end of 第二層分類-數位 -->
-      <!-- 第二層分類-居家 -->
-      <!-- <div class="houseware">
-        <a class="kitchen active" href="javascript:void(0);">廚房</a>
-        <a class="bathroom" href="javascript:void(0);" >浴室</a>
-        <a class="hardware" href="javascript:void(0);" >五金修繕</a>
-        <a class="clean" href="javascript:void(0);" >清潔用品</a>
-        <a class="storage" href="javascript:void(0);" >居家收納</a>
-        <a class="perfume" href="javascript:void(0);" >居家雜貨</a>
-        <a class="furniture" href="javascript:void(0);" >家具</a>
-        <a class="tissue" href="javascript:void(0);" >日用耗品</a>
-      </div> -->
-      <!--end of 第二層分類-居家 -->
-      <!-- 第二層分類-美食 -->
-      <!-- <div class="food">
-        <a class="snacks" href="javascript:void(0);">零食</a>
-        <a class="cake" href="index.html?nav=02" >甜點</a>
-        <a class="dumpling" href="index.html?nav=03" >小吃熟食</a>
-        <a class="meat" href="index.html?nav=04" >生鮮食品</a>
-        <a class="coffee" href="index.html?nav=05" >飲品/沖泡品</a>
-        <a class="other" href="javascript:void(0);" >其他</a>
-      </div> -->
-      <!--end of 第二層分類-美食 -->
-      <!-- 第二層分類-時尚 -->
-      <!-- <div class="fashion">
-        <a class="lipstick" href="javascript:void(0);">美妝保養</a>
-        <a class="dress" href="index.html?nav=02" >女生衣著</a>
-        <a class="bag" href="index.html?nav=03" >女生包包</a>
-        <a class="necklace" href="index.html?nav=04" >女生配件</a>
-        <a class="female-shoe" href="index.html?nav=05" >女鞋</a>
-        <a class="shirt" href="javascript:void(0);" >男生衣著</a>
-        <a class="briefcase" href="javascript:void(0);" >男生包包與配件</a>
-        <a class="shoe" href="javascript:void(0);" >男鞋</a>
-      </div> -->
-      <!--end of 第二層分類-時尚 -->
-      <!-- 第二層分類-休閒 -->
-      <!-- <div class="entertain">
-        <a class="camping active" href="javascript:void(0);">戶外/運動用品</a>
-        <a class="rim" href="javascript:void(0);" >汽機車零件百貨</a>
-        <a class="dog" href="javascript:void(0);" >寵物</a>
-        <a class="bear" href="javascript:void(0);" >娛樂/收藏</a>
-        <a class="ticket" href="javascript:void(0);" >服務/票券</a>
-        <a class="gamepad" href="javascript:void(0);" >遊戲王</a>
-        <a class="bag" href="javascript:void(0);" >代買代購</a>
-        <a class="party" href="javascript:void(0);" >其他</a>
-      </div> -->
-      <!--end of 第二層分類-休閒 -->
-      <!-- 第二層分類-母嬰 -->
-      <div class="mom">
-        <a class="pijama active" href="javascript:void(0);">嬰幼兒服裝與配件</a>
-        <a class="pregnancy" href="javascript:void(0);" >孕婦裝及用品</a>
-        <a class="christmas" href="javascript:void(0);" >兒童玩具</a>
-        <a class="bottle" href="javascript:void(0);" >哺育用品</a>
-        <a class="soap" href="javascript:void(0);" >清潔護理</a>
-        <a class="transport" href="javascript:void(0);" >外出用品</a>
-        <a class="crib" href="javascript:void(0);" >嬰幼童家具/寢具</a>
-        <a class="puzzle" href="javascript:void(0);" >其他</a>
-      </div>
-      <!--end of 第二層分類-母嬰 -->
-      </div>
-    </div>
       <div class="filter-wrapper">
-        <div class="item"><a href="category.html?filter=latest">最新</a></div>
-        <div class="item"><a href="category.html?filter=hottest">最熱銷</a></div>
-        <div class="price-block">
+        <div class="item"><a href="search.html?filter=latest">最新</a></div>
+        <div class="item"><a href="search.html?filter=hottest">最熱銷</a></div>
+        <div class="price-block" data-type="search">
           <a href="javascript:void(0);">價格</a>
           <i class="fa fa-caret-up" aria-hidden="true"></i>
           <i class="fa fa-caret-down" aria-hidden="true"></i>
         </div>
       </div>
-      <div class="pro-view">
+      <div class="search-result pro-view">
+      <!-- 搜尋不到店鋪顯示文字:無相關店鋪!
+           搜尋不到商品顯示文字: 無相關商品!-->
+        <!-- <div class="empty">無相關店鋪!</div> -->
+    <!-- end of 搜尋不到店鋪或商品 -->
+        <!-- 搜尋店鋪結果 -->
+        <!-- <div class="product-defult grid">
+          <div class="row pro-grid-style01">
+            <div class="item col-6 col-lg-2">
+              <div class="cont">
+                <div class="photo">
+                  <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                    <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <div class="shop"><a href="javascript:void(0);">吉室商行</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-6 col-lg-2">
+              <div class="cont">
+                <div class="photo">
+                  <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                    <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <div class="shop"><a href="javascript:void(0);">吉室商行</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-6 col-lg-2">
+              <div class="cont">
+                <div class="photo">
+                  <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                    <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <div class="shop"><a href="javascript:void(0);">吉室商行</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-6 col-lg-2">
+              <div class="cont">
+                <div class="photo">
+                  <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                    <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <div class="shop"><a href="javascript:void(0);">吉室商行</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-6 col-lg-2">
+              <div class="cont">
+                <div class="photo">
+                  <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                    <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <div class="shop"><a href="javascript:void(0);">吉室商行</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-6 col-lg-2">
+              <div class="cont">
+                <div class="photo">
+                  <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                    <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <div class="shop"><a href="javascript:void(0);">吉室商行</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-6 col-lg-2">
+              <div class="cont">
+                <div class="photo">
+                  <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                    <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <div class="shop"><a href="javascript:void(0);">吉室商行</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-6 col-lg-2">
+              <div class="cont">
+                <div class="photo">
+                  <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
+                    <img class="img-fluid" src="beango/images/pro02.jpg" alt="">
+                  </a>
+                </div>
+                <div class="info">
+                  <div class="shop"><a href="javascript:void(0);">吉室商行</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- end of 搜尋店鋪結果 -->
+        <!-- 搜尋商品結果 -->
         <div class="product-defult grid">
           <div class="row pro-grid-style01">
             <div class="item col-6 col-lg-2">
@@ -306,6 +339,7 @@
             </div>
           </div>
         </div>
+        <!-- end of 搜尋商品結果 -->
       </div>
     </div>
     <footer>

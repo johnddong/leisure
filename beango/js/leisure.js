@@ -65,7 +65,7 @@
   $nav = $('nav'),
   $searchbar = $('#searchbar');
 
-  $('#search a').on('click',function(){
+  $('#search').on('click',function(){
     $nav.toggle('slow');
     $searchbar.toggle('slow');
   });
@@ -187,23 +187,31 @@
   });
   $price.on('click',function(){
     var $this = $(this),
-        $active = $this.find('.active');
+        $active = $this.find('.active'),
+        type = $this.data('type'),
+        url="";
+    if(type == 'search'){
+      url = 'search.html';
+    }else{
+      url = 'category.html';
+    }
     $this.addClass('active').siblings().removeClass('active');
     if($active.length == 0){
       $this.find('.fa-caret-up').addClass('active');
-      location.href = 'category.html?filter=descending';
+      location.href = url+'?filter=descending';
     }else{
       var fa = $this.find('.fa');
       $.each(fa,function(){
-        if($(this).hasClass('active')){
-          $(this).removeClass('active');
+        var $this = $(this);
+        if($this .hasClass('active')){
+          $this .removeClass('active');
         }else{
-          if($(this).hasClass('fa-caret-up')){
-            location.href = 'category.html?filter=descending';
+          if($this .hasClass('fa-caret-up')){
+            location.href = url+'?filter=descending';
           }else{
-            location.href = 'category.html?filter=ascending';
+            location.href = url+'?filter=ascending';
           }
-          $(this).addClass('active');
+          $this .addClass('active');
         }
       });
     }

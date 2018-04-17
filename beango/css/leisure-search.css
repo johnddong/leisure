@@ -1,0 +1,66 @@
+#search-page a.active,
+#search-page .active a{
+  color: #EB0045;
+}
+@media (min-width: 992px) {
+  #search-page a:hover{color: #EB0045;}
+}
+/*
+篩選
+*/
+.filter-wrapper{
+  width: 155px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.filter-wrapper>div{
+  position: relative;
+  display: inline-block;
+  border-right: 1px solid #777;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+.filter-wrapper>div:last-child{
+  border-right: none;
+}
+.price-block i{
+  position: absolute;
+}
+.price-block i.active{
+  color: #EB0045;
+}
+.price-block .fa-caret-up{
+  top:0;
+  right: 0;
+}
+.price-block .fa-caret-down{
+  bottom:0;
+  right: 0;
+}
+.pro-view .item{
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
+}
+.pro-view .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (max-width: 991.98px) {
+  nav{
+    display: none;
+  }
+  .search-form{
+    display: block;
+  }
+}
+.search-result .empty{
+  text-align: center;
+  padding-top: 19%;
+}
+@media (min-width: 992px) {
+  .search-result .empty{
+    padding-bottom: 19%;
+  }
+}
