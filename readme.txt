@@ -31,3 +31,18 @@
           <i class="fa fa-caret-up active" aria-hidden="true"></i>
           <i class="fa fa-caret-down" aria-hidden="true"></i>
         </div>
+
+/**
+*Date: 2018/04/18
+*內容：有閑首頁調整
+*TKT: #72933
+*/
+1.頁面 index.html:
+  markup:
+  <!-- 導購推推 -->
+      <div class="promo-shopping-guide promo-section">  → 增加 promo-shopping-guide
+        <div class="header">
+          <div class="sub-title">
+2.更新:
+leisure.css
+leisure.js

@@ -23,7 +23,7 @@ ul,li{
   margin-right: 0;
 }
 .main-container{
-  padding: 0 1em;
+  /* padding: 0 1em; */
   margin-bottom: 90px;
 }
 .content-with{
@@ -217,7 +217,7 @@ nav .btn a{
     text-decoration: none;
 }
 #scrollmenu a.active{
-    color: #ffffff;
+    color: #EB0045;
 }
 .scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar{
   cursor: pointer;
@@ -623,6 +623,10 @@ slideshow
   font-size: 25px;
 }
 /*爆爆專區*/
+.promo-limited-time{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .promo-limited-time .header{
   margin-bottom: 10px;
 }
@@ -634,6 +638,11 @@ slideshow
   height: auto;
   border: solid 1px #C1C1C1;
   padding: 2px;
+}
+/*導購推推*/
+.promo-shopping-guide{
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /*每日好店,閑編推薦*/
 .promo-section .see-more{
@@ -668,6 +677,10 @@ slideshow
   }
 }
 /*每日熱門*/
+.promo-hot{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .promo-hot .bodyer{
   background-color: #fff;
   border: solid 1px #C1C1C1;
@@ -682,16 +695,38 @@ slideshow
 .promo-hot .bodyer .cont:last-child{
   border-bottom: none;
 }
-@media (min-width: 991.98px) {
+@media (min-width: 992px) {
   .promo-hot .bodyer .cont{
     border-bottom: none;
   }
 }
 /*每日新發現*/
+.promo-discover{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .promo-discover .item{
-  padding-left: 5px;
-  padding-right: 5px;
   margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .promo-discover .item{
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+  .promo-discover .item:nth-child(4n){
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 991.98px) {
+  .promo-discover .item{
+    padding-left: 5px;
+    padding-right: 0px;
+  }
+  .promo-discover .item:nth-child(odd){
+    padding-left: 0px;
+    padding-right: 5px;
+  }
 }
 .sub-title span.icon-clock{background-image: url("../images/icon/promo/icon-clock.png");}
 .sub-title span.icon-money{background-image: url("../images/icon/promo/icon-money.png");}
@@ -713,12 +748,15 @@ footer{
   padding: 10px 0;
 }
 .fixed-footer>ul{
-  width: 293px;
-  margin: 0 auto;
+  display: flow-root;
+  /* width: 293px;
+  margin: 0 auto; */
 }
 .fixed-footer ul li{
+  width: 20%;
   float: left;
-  margin: 0 5px;
+  text-align: center;
+  /* margin: 0 5px; */
 }
 .fixed-footer a{
   display: block;
@@ -727,13 +765,9 @@ footer{
   padding-top: 30px;
 }
 .fixed-footer .goback a{background-image: url("../images/icon/footer/icon-home.png");}
-.fixed-footer .goback a:hover{background-image: url("../images/icon/footer/icon-home-hover.png");}
 .fixed-footer .dollar a{background-image: url("../images/icon/footer/icon-dollar.png");}
-.fixed-footer .dollar a:hover{background-image: url("../images/icon/footer/icon-dollar-hover.png");}
 .fixed-footer .shop a{background-image: url("../images/icon/footer/icon-shop.png");}
-.fixed-footer .shop a:hover{background-image: url("../images/icon/footer/icon-shop-hover.png");}
 .fixed-footer .member a{background-image: url("../images/icon/footer/icon-member.png");}
-.fixed-footer .member a:hover{background-image: url("../images/icon/footer/icon-member-hover.png");}
 .fixed-footer .cart a{background-image: url("../images/icon/footer/icon-cart.png");}
 .fixed-footer .cart a:hover{background-image: url("../images/icon/footer/icon-cart-hover.png");}
 @media (min-width: 992px) {
