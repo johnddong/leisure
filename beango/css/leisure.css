@@ -191,6 +191,7 @@ nav
 nav .btn{
   float: left;
   border-radius: 0;
+  padding-top: 0;
 }
 nav .btn a{
   font-size: 13px;
@@ -299,6 +300,17 @@ nav .btn a{
   }
 }
 /*product style*/
+.grid .photo{
+  position: relative;
+  padding-bottom: 100%;
+}
+.grid .photo img{
+  object-fit: contain;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 .product-defult .fixed-price{
   vertical-align:bottom;
   overflow: hidden;
@@ -463,6 +475,9 @@ slideshow
   /* background-color: #fff; */
   background-color: rgba(255, 255, 255, 0.9);
   color: #666;
+}
+.main-slideshow .owl-carousel .owl-dots{
+	bottom: 5px;
 }
 .main-slideshow .owl-carousel .owl-dots .owl-dot {
   display: inline-block;
@@ -652,6 +667,10 @@ slideshow
   border: solid 1px #C1C1C1;
   padding: 2px;
 }
+.promo-good-shop .price-group .fixed-price{
+	display: block;
+	height: 20px;
+}
 .promo-good-shop .grid .sale-price span{
   font-size: 22px;
 }
@@ -708,12 +727,8 @@ slideshow
 }
 @media (min-width: 992px) {
   .promo-discover .item{
-    padding-left: 0px;
-    padding-right: 10px;
-  }
-  .promo-discover .item:nth-child(4n){
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 @media (max-width: 991.98px) {
@@ -845,4 +860,16 @@ footer .footer li{
 }
 .back-to-top.show {
 	display: block !important;
+}
+/* 內頁: 商品列表 */
+.pro-view .photo{
+  position: relative;
+  padding-bottom: 100%;
+}
+.pro-view .photo img{
+  object-fit: contain;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
 }

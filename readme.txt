@@ -46,3 +46,20 @@
 2.更新:
 leisure.css
 leisure.js
+
+/**
+*Date: 2018/04/30
+*內容：商品調整與按鈕調整
+*TKT: #72933
+*/
+1.markup:
+選單:
+<nav>
+  <div class="btn">
+	<a href="javascript:void(0);">
+	  <img src="beango/images/icon/menu/btn.jpg" alt="女人節">
+	</a>
+  </div>
+
+2.更新:
+leisure.css
