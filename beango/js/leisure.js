@@ -83,7 +83,7 @@
   /*countdown*/
   // Update the count down every 1 second
   var $countdown = $('#countdown'),
-      distance = $('#countdown').data('distance');
+      distance = $countdown.data('distance');
   var x = setInterval(function() {
     distance = distance-1000;
     var days = Math.floor(distance / (1000 * 60 * 60 * 24)),

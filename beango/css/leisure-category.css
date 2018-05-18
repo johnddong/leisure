@@ -68,6 +68,8 @@
 .sub-nav .food a.meat.active{background-image: url("../images/icon/sub-nav/food/icon-meat-hover.png");}
 .sub-nav .food a.coffee{background-image: url("../images/icon/sub-nav/food/icon-coffee.png");}
 .sub-nav .food a.coffee.active{background-image: url("../images/icon/sub-nav/food/icon-coffee-hover.png");}
+.sub-nav .food a.healthy{background-image: url("../images/icon/sub-nav/food/icon-healthcare.png");}
+.sub-nav .food a.healthy.active{background-image: url("../images/icon/sub-nav/food/icon-healthcare-hover.png");}
 .sub-nav .food a.other{background-image: url("../images/icon/sub-nav/food/icon-other.png");}
 .sub-nav .food a.other.active{background-image: url("../images/icon/sub-nav/food/icon-other-hover.png");}
 /*時尚*/
@@ -119,8 +121,8 @@
 .sub-nav .mom a.transport.active{background-image: url("../images/icon/sub-nav/mom/icon-transport-hover.png");}
 .sub-nav .mom a.crib{background-image: url("../images/icon/sub-nav/mom/icon-crib.png");}
 .sub-nav .mom a.crib.active{background-image: url("../images/icon/sub-nav/mom/icon-crib-hover.png");}
-.sub-nav .mom a.puzzle{background-image: url("../images/icon/sub-nav/mom/icon-puzzle.png");}
-.sub-nav .mom a.puzzle.active{background-image: url("../images/icon/sub-nav/mom/icon-puzzle-hover.png");}
+.sub-nav .mom a.puzzle{background-image: url("../images/icon/sub-nav/mom/icon-canfood.png");}
+.sub-nav .mom a.puzzle.active{background-image: url("../images/icon/sub-nav/mom/icon-canfood-hover.png");}
 @media (min-width: 992px) {
   .scrollmenu .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar{
     background-color: #ddd;
@@ -149,6 +151,7 @@
   .sub-nav .food a.dumpling:hover{background-image: url("../images/icon/sub-nav/food/icon-dumpling-hover.png");}
   .sub-nav .food a.meat:hover{background-image: url("../images/icon/sub-nav/food/icon-meat-hover.png");}
   .sub-nav .food a.coffee:hover{background-image: url("../images/icon/sub-nav/food/icon-coffee-hover.png");}
+  .sub-nav .food a.healthy:hover{background-image: url("../images/icon/sub-nav/food/icon-healthcare-hover.png");}
   .sub-nav .food a.other:hover{background-image: url("../images/icon/sub-nav/food/icon-other-hover.png");}
   /*時尚*/
   .sub-nav .fashion a.lipstick:hover{background-image: url("../images/icon/sub-nav/fashion/icon-lipstick-hover.png");}
@@ -176,7 +179,7 @@
   .sub-nav .mom a.soap:hover{background-image: url("../images/icon/sub-nav/mom/icon-soap-hover.png");}
   .sub-nav .mom a.transport:hover{background-image: url("../images/icon/sub-nav/mom/icon-transport-hover.png");}
   .sub-nav .mom a.crib:hover{background-image: url("../images/icon/sub-nav/mom/icon-crib-hover.png");}
-  .sub-nav .mom a.puzzle:hover{background-image: url("../images/icon/sub-nav/mom/icon-puzzle-hover.png");}
+  .sub-nav .mom a.puzzle:hover{background-image: url("../images/icon/sub-nav/mom/icon-canfood-hover.png");}
 }
 /*
 篩選
@@ -184,8 +187,7 @@
 .filter-wrapper{
   width: 155px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding: 20px 0;
 }
 .filter-wrapper>div{
   position: relative;

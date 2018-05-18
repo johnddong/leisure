@@ -18,6 +18,9 @@ ul,li{
   padding: 0 0;
   margin: 0 0;
 }
+.img-fluid{
+  width: 100%;
+}
 .main-container .row{
   margin-left: 0;
   margin-right: 0;
@@ -46,6 +49,7 @@ header{
   height: 50px;
   background-color: #EB0045;
   padding: 0 15px;
+  margin-bottom: 68px;
 }
 header .logo{
   height: 50px;
@@ -75,6 +79,7 @@ header #search i{
     display: block;
     text-align: right;
     padding-top: 10px;
+    padding-right: 0px; /*隱藏購物車*/
   }
   #menu-list ul li{
     display: inline-block;
@@ -86,7 +91,8 @@ header #search i{
     background-repeat: no-repeat;
     background-position: left top;
     padding-top: 5px;
-    padding-right: 10px;
+    padding-right: 6px; /*隱藏購物車*/
+    /* padding-right: 10px; */
     padding-left: 30px;
   }
   #menu-list li a:hover{color: #fff;}
@@ -181,12 +187,14 @@ header #search i{
   z-index: 1000;
 }
 
-/*
-nav
-*/
+/*nav*/
 .nav{
   overflow: hidden;
   background-color: #333;
+  width: 100%;
+  position: absolute;
+  height: 68px;
+  top: 50px;
 }
 nav .btn{
   float: left;
@@ -222,9 +230,12 @@ nav .btn a{
 }
 .nav #scrollmenu{
     background-color: #333;
-    margin-left: 75px;
+    margin-left: 95px;
 }
 @media (max-width: 991.98px) {
+  header{
+    margin-bottom: 54px;
+  }
   .nav{
     height: 54px;
     padding-top: 5px;
@@ -328,6 +339,8 @@ nav .btn a{
   display: inline-block;
 }
 .product-defult .shop{
+  overflow: hidden;
+  height: 21px;
   margin-top: 5px;
 }
 .product-defult .desc{
@@ -567,10 +580,6 @@ slideshow
 .promo-section{
   margin-top: 1.2em;
 }
-.promo-section img{
-  display: block;
-  margin: 0 auto;
-}
 .promo-section .header{
   height: 30px;
   margin-bottom: 5px;
@@ -688,6 +697,9 @@ slideshow
   padding: 10px 0;
 }
 @media (min-width: 991.98px) {
+  .promo-good-shop .promo-section .ad{
+    height: 297px;
+  }
   .promo-good-shop .section2,
   .promo-recommend .section2{
     padding-top: 35px;
@@ -727,6 +739,7 @@ slideshow
 }
 @media (min-width: 992px) {
   .promo-discover .item{
+    padding-left: 0px;
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -766,7 +779,7 @@ footer{
   margin: 0 auto; */
 }
 .fixed-footer ul li{
-  width: 20%;
+  width: 25%;
   float: left;
   text-align: center;
   /* margin: 0 5px; */

@@ -5,14 +5,16 @@
 @media (min-width: 992px) {
   #search-page a:hover{color: #EB0045;}
 }
+#search-page .main-container{
+  padding-top: 20px;
+}
 /*
 篩選
 */
 .filter-wrapper{
   width: 155px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  padding: 20px 0;
 }
 .filter-wrapper>div{
   position: relative;
@@ -46,6 +48,9 @@
 .pro-view .row{
   margin-left: 0;
   margin-right: 0;
+}
+.search-result{
+  padding-top: 20px;
 }
 @media (max-width: 991.98px) {
   nav{
