@@ -91,8 +91,7 @@ header #search i{
     background-repeat: no-repeat;
     background-position: left top;
     padding-top: 5px;
-    padding-right: 6px; /*隱藏購物車*/
-    /* padding-right: 10px; */
+    padding-right: 10px;
     padding-left: 30px;
   }
   #menu-list li a:hover{color: #fff;}
@@ -192,9 +191,9 @@ header #search i{
   overflow: hidden;
   background-color: #333;
   width: 100%;
-  position: absolute;
+  position: absolute; /*for bottom pc nav*/
   height: 68px;
-  top: 50px;
+  top: 50px;/*for bottom pc nav*/
 }
 nav .btn{
   float: left;
