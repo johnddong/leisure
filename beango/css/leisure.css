@@ -221,7 +221,7 @@ nav .btn a{
     text-decoration: none;
 }
 #scrollmenu a.active{
-    color: #EB0045;
+    color: #fff;
 }
 .scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar{
   cursor: pointer;
@@ -246,6 +246,7 @@ nav .btn a{
     margin-left:85px;
   }
   #scrollmenu a{
+    color: #bbb;
     width: auto;
   }
   #scrollmenu a,
@@ -253,7 +254,7 @@ nav .btn a{
     margin-bottom: 5px;
   }
   #scrollmenu a:hover {
-      color: #EB0045;
+      color: #fff
   }
 }
 /*pc nav search*/
