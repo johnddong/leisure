@@ -197,3 +197,14 @@ leisure.css
           <li class="cart"><a href="javascript:void(0);">購物車</a></li>
         </ul>
       </div>
+/**
+*Date: 2018/05/18
+*內容：有閑首頁Herder高度修改
+*TKT: #75051
+*/
+1. 頁面:首頁、搜尋頁、內頁
+ markup:
+	<div class="col logo">
+	  <a href="#"><img src="beango/images/logo.png" alt="有閑"></a>
+	</div>
+2.更新:jollybuy.css

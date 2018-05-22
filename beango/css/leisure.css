@@ -6,7 +6,7 @@ body{
   line-height: 20px;
   letter-spacing: 0.5px;
   text-decoration: none;
-  color: rgb(119, 119, 119);
+  color: #777;
   background-color: #f5f5f5;
 }
 a,a:link,a:visited{
@@ -46,18 +46,17 @@ ul,li{
 header
 */
 header{
-  height: 50px;
+  height: 40px;
   background-color: #EB0045;
   padding: 0 15px;
-  margin-bottom: 68px;
+  margin-bottom: 40px;/*for bottom  */
 }
-header .logo{
-  height: 50px;
-  text-align: center;
+header .logo img{
+  max-height: 40px;
 }
 header #search{
   text-align: right;
-  padding-top: 13px;
+  padding-top: 8px;
   padding-right: 0;
 }
 header #search i{
@@ -78,7 +77,7 @@ header #search i{
   #menu-list{
     display: block;
     text-align: right;
-    padding-top: 10px;
+    padding-top: 6px;
     padding-right: 0px; /*隱藏購物車*/
   }
   #menu-list ul li{
@@ -110,7 +109,7 @@ header #search i{
  #navbarSideButton{
   color: #fff;
   outline: none;
-  margin-top: 10px;
+  margin-top: 6px;
  }
  .navbar-side {
   color: #fff;
@@ -192,8 +191,8 @@ header #search i{
   background-color: #333;
   width: 100%;
   position: absolute; /*for bottom pc nav*/
-  height: 68px;
-  top: 50px;/*for bottom pc nav*/
+  height: 40px;
+  top: 40px;/*for bottom pc nav*/
 }
 nav .btn{
   float: left;
@@ -205,7 +204,7 @@ nav .btn a{
   color: #fff;
 }
 #scrollmenu a{
-  width: 41px;
+  width: 37px;
   overflow: hidden;
 }
 #scrollmenu,
@@ -218,7 +217,7 @@ nav .btn a{
     display: inline-block;
     color: #ddd;
     text-align: center;
-    padding:12px 14px;
+    padding:5px 10px;
     text-decoration: none;
 }
 #scrollmenu a.active{
@@ -232,11 +231,7 @@ nav .btn a{
     margin-left: 95px;
 }
 @media (max-width: 991.98px) {
-  header{
-    margin-bottom: 54px;
-  }
   .nav{
-    height: 54px;
     padding-top: 5px;
   }
 }
@@ -269,13 +264,14 @@ nav .btn a{
 .search-form{
   display: none;
   width: 80%;
-  margin: 5px auto;
+  margin: 0px auto;
+  padding-top: 3px;
 }
 .search-form .wrap{
   background-color: #1f1f1f;
   border-radius: 16px;
   position: relative;
-  padding: 6px 15px;
+  padding: 0px 8px;
 }
 .search-form .search-button{
   color: #777;
@@ -287,6 +283,7 @@ nav .btn a{
   right: 15px;
 }
 .search-form input{
+  height: 25px;
   color: #777;
   background: transparent;
   border: none;
@@ -305,8 +302,9 @@ nav .btn a{
     width: 245px;
     float: right;
     display: block;
-    margin: 10px auto;
-    margin-top: 13px;
+    padding-top: 0px;
+    margin: 0px auto;
+    margin-top: 8px;
   }
 }
 /*product style*/
