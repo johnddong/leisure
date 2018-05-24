@@ -51,6 +51,9 @@ header{
   padding: 0 15px;
   margin-bottom: 40px;/*for bottom  */
 }
+header .logo{
+  text-align: center;
+}
 header .logo img{
   max-height: 40px;
 }
