@@ -575,29 +575,46 @@ slideshow
 }
 /*promo*/
 .promo-section{
-  margin-top: 1.2em;
+  /* margin-top: 1.2em; */
 }
 .promo-section .header{
+  text-align: center;
   height: 30px;
-  margin-bottom: 5px;
+  margin: 30px;
 }
 .sub-title{
   color: #222222;
   font-size: 1.23em;
   font-weight: bold;
   display: inline-block;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 .sub-title span{
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
   display: inline-block;
   background-repeat: no-repeat;
   padding-top: 6px;
   padding-left: 30px;
 }
+.sub-title .action-word{
+  color: #de002a;
+  font-size: 40px;
+  padding: 0;
+}
+.sub-title .action-icon{
+  background: url("../images/icon/promo/icon-action-icon.png") no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 20px;
+  margin-bottom: 10px;
+}
 .promo-section .desc{
   display: inline-block;
 }
 .promo-section .timer{
+  width: 155px;
   display: inline-block;
   vertical-align: bottom;
   margin-bottom: 5px;
@@ -641,16 +658,16 @@ slideshow
 .promo-section .grid .sale-price span{
   font-size: 25px;
 }
-/*爆爆專區*/
+/* 1人獨享超好買 */
 .promo-limited-time{
   padding-left: 15px;
   padding-right: 15px;
 }
 .promo-limited-time .header{
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .promo-limited-time .sub-title{
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .promo-limited-time .item{
   width: 100%;
@@ -666,6 +683,12 @@ slideshow
 /*每日好店,閑編推薦*/
 .promo-section .see-more{
   text-align: center;
+}
+.promo-good-shop .header,
+.promo-recommend .header{
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
 }
 .promo-good-shop .bodyer,
 .promo-recommend .bodyer{
@@ -699,10 +722,18 @@ slideshow
   }
   .promo-good-shop .section2,
   .promo-recommend .section2{
-    padding-top: 35px;
+    /* padding-top: 35px; */
   }
 }
-/*每日熱門*/
+/* 爆款好店快去逛 & 小編推薦不停購 */
+@media (max-width: 992px) {
+  .promo-good-shop .section2,
+  .promo-recommend .section2{
+    padding-top: 10px;
+  }
+}
+
+/* 今日好物最熱賣 */
 .promo-hot{
   padding-left: 15px;
   padding-right: 15px;
@@ -726,7 +757,7 @@ slideshow
     border-bottom: none;
   }
 }
-/*每日新發現*/
+/* 今日新品快去挖 */
 .promo-discover{
   padding-left: 15px;
   padding-right: 15px;
@@ -749,6 +780,20 @@ slideshow
   .promo-discover .item:nth-child(odd){
     padding-left: 0px;
     padding-right: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .promo-section .header,
+  .promo-good-shop .header, 
+  .promo-recommend .header{
+    height: 100%;
+    margin: 15px 0 5px 0;
+  }
+  .sub-title span{
+    font-size: 20px;
+  }
+  .sub-title .action-word{
+    font-size: 28px;
   }
 }
 .sub-title span.icon-clock{background-image: url("../images/icon/promo/icon-clock.png");}
