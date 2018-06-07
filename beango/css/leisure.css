@@ -97,8 +97,8 @@ header #search i{
     padding-left: 30px;
   }
   #menu-list li a:hover{color: #fff;}
-  #menu-list li.shop a{background-image: url("../images/icon/menu/icon-shop.png");}
-  #menu-list li.shop a:hover{background-image: url("../images/icon/menu/icon-shop-hover.png");}
+  #menu-list li.shop a{background-image: url("../images/icon/menu/icon-shop.png"); background-size: 30px auto;}
+  #menu-list li.shop a:hover{background-image: url("../images/icon/menu/icon-shop-hover.png"); background-size: 30px auto;}
   #menu-list li.dollar a{background-image: url("../images/icon/menu/icon-dollar.png");}
   #menu-list li.dollar a:hover{background-image: url("../images/icon/menu/icon-dollar-hover.png");}
   #menu-list li.member a{background-image: url("../images/icon/menu/icon-member.png");}
@@ -675,10 +675,82 @@ slideshow
   border: solid 1px #C1C1C1;
   padding: 2px;
 }
-/*導購推推*/
+/*三人團購限時*/
 .promo-shopping-guide{
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .promo-shopping-guide .item{
+    padding-left: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.promo-shopping-guide .item{
+  margin-bottom: 10px;
+}
+@media (max-width: 991.98px) {
+  .promo-shopping-guide .item{
+    padding: 0;
+  }
+  .promo-shopping-guide .item .cont{
+    padding: 5px;
+    overflow: hidden;;
+  }
+  .promo-shopping-guide .item .cont .photo{
+    float: left;
+    padding: 0;
+    width: 40%;
+    height: auto;;
+  }
+  .promo-shopping-guide .item .cont .photo img{
+    height: auto;;
+  }
+  .promo-shopping-guide .item .cont .info{
+    float: left;
+    margin-left: 5%;
+    padding: 0;
+    width: 55%;
+    height: auto;;
+  }
+  .promo-shopping-guide .item .cont .info .desc{
+    height: 38px;
+  }
+}
+.promo-shopping-guide .product-defult .price-group{
+  display: inline-block;
+  width: calc(100% - 95px);
+  text-align: left;
+}
+.promo-shopping-guide .product-defult .price-group .sale-price .txt,
+.promo-shopping-guide .product-defult .price-group .fixed-price{
+  font-size: 13px;
+}
+.promo-shopping-guide .product-defult .price-group .fixed-price{
+  text-decoration: none;
+}
+.promo-shopping-guide .product-defult .btn-group-buy{
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  background-color: #de002a;
+  border-radius: 25px;
+  color: #FFF;
+  line-height: 29px;
+  vertical-align: top;
+  text-align: center;
+}
+@media (max-width: 991.98px) {
+  .promo-shopping-guide .product-defult .price-group{
+    width: 100%;
+  }
+  .promo-shopping-guide .grid .info{
+    text-align: left;
+  }
+  .promo-shopping-guide .product-defult .price-group .sale-price .txt{
+    display: block;
+  }
 }
 /*每日好店,閑編推薦*/
 .promo-section .see-more{
@@ -834,7 +906,7 @@ footer{
 }
 .fixed-footer .goback a{background-image: url("../images/icon/footer/icon-home.png");}
 .fixed-footer .dollar a{background-image: url("../images/icon/footer/icon-dollar.png");}
-.fixed-footer .shop a{background-image: url("../images/icon/footer/icon-shop.png");}
+.fixed-footer .shop a{background-image: url("../images/icon/footer/icon-shop.png"); background-size: 30px auto;}
 .fixed-footer .member a{background-image: url("../images/icon/footer/icon-member.png");}
 .fixed-footer .cart a{background-image: url("../images/icon/footer/icon-cart.png");}
 .fixed-footer .cart a:hover{background-image: url("../images/icon/footer/icon-cart-hover.png");}
