@@ -700,11 +700,13 @@ slideshow
   }
   .promo-shopping-guide .item .cont .photo{
     float: left;
+    margin: 0;
     padding: 0;
     width: 40%;
     height: auto;;
   }
   .promo-shopping-guide .item .cont .photo img{
+    position: relative;
     height: auto;;
   }
   .promo-shopping-guide .item .cont .info{
@@ -715,6 +717,7 @@ slideshow
     height: auto;;
   }
   .promo-shopping-guide .item .cont .info .desc{
+    display: block;
     height: 38px;
   }
 }
@@ -740,6 +743,9 @@ slideshow
   line-height: 29px;
   vertical-align: top;
   text-align: center;
+}
+.promo-shopping-guide .product-defult .btn-group-buy:hover{
+  background-color: #CD0000;
 }
 @media (max-width: 575.98px) {
   .promo-shopping-guide .product-defult .price-group{
@@ -1000,3 +1006,6 @@ footer .footer li{
   top: 0;
   left: 0;
 }
+
+/* 首頁動態載入 */
+.loader{background: url(beango/images/spinner/spinner.gif) no-repeat center center}
