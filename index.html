@@ -116,7 +116,7 @@
         <div class="col-6 col-sm-6"><a href="javascript:void(0);"><img class="img-fluid" src="beango/images/img01.png" alt="我要導購閒錢一直賺"></a></div>
       </div>
       <!-- end of 導購banner -->      
-      
+
       <!-- 1人獨享超好 -->
       <div class="promo-limited-time promo-section">
         <div class="header">
@@ -180,7 +180,7 @@
                 <div class="cont">
                   <div class="photo">
                     <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
-                      <img class="img-fluid" src="beango/images/pro04.jpg" alt="">
+                      <img class="img-fluid" src="beango/images/pro04-600x600.jpg" alt="">
                     </a>
                   </div>
                   <div class="info">
@@ -225,7 +225,7 @@
                 <div class="cont">
                   <div class="photo">
                     <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
-                      <img class="img-fluid" src="beango/images/pro05.jpg" alt="">
+                      <img class="img-fluid" src="beango/images/pro03.jpg" alt="">
                     </a>
                   </div>
                   <div class="info">
@@ -439,7 +439,7 @@
                 <div class="cont">
                   <div class="photo">
                     <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
-                      <img class="img-fluid" src="beango/images/pro04.jpg" alt="">
+                      <img class="img-fluid" src="beango/images/pro04-600x600.jpg" alt="">
                     </a>
                   </div>
                   <div class="info">
@@ -456,7 +456,7 @@
                 <div class="cont">
                   <div class="photo">
                     <a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">
-                      <img class="img-fluid" src="beango/images/pro05.jpg" alt="">
+                      <img class="img-fluid" src="beango/images/pro03.jpg" alt="">
                     </a>
                   </div>
                   <div class="info">
@@ -638,19 +638,25 @@
     <div><a href="mailto:Jollybuy_cs@jollywiz.com">聯絡我們</a></div>
   </div>
 <!--end of left slider content -->
+  <script type="text/javascript" src="beango/js/load_script.js"></script>
+  <script type="text/javascript" src="beango/js/infiniteScroll.js"></script>
   <script type="text/javascript" src="beango/js/bootstrap.min.js" ></script>
   <script type="text/javascript" src="beango/js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script type="text/javascript" src="beango/js/owl.carousel.min.js"></script>
   <script type="text/javascript" src="beango/js/digit_countdown.js"></script>
   <script type="text/javascript" src="beango/js/leisure.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2205396-38"></script> -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-2205396-38"></script>
   <script>
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    // gtag('config', 'UA-2205396-38');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-2205396-38');
+
+    $(function() {
+			/* infinite scroll */
+			infiniteScroll.init({_this: 'main-container'});
+		});	
   </script>
-  
 </body>
 </html>
