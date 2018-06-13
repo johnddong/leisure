@@ -150,7 +150,7 @@ var infiniteScroll = (function($, win, doc) {
 			if (json.search == '') return;
 			$.each(json.search, function(i, e) {
 				anchor = (i == 0) ? '<a name="pg'+pageNum+'"></a>' : '';
-				colClass = (getViewType() == viewType.default) ? 'col-6' : 'col-lg-2';
+				colClass = 'col-6 col-lg-2';
 				productEl =
 					anchor +
 					'<div class="item '+colClass+'">'+
