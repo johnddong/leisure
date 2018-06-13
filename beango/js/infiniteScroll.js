@@ -166,11 +166,10 @@ var infiniteScroll = (function($, win, doc) {
 								'<div class="fixed-price">'+e.fixed_price+'</div>'+
 								'<div class="sale-price">$<span>'+e.sale_price+'</span></div>'+
 								'</div>'+
-								'<div class="shop"><a href="javascript:void(0);">吉室商行</a></div>'+
+								'<div class="shop"><a href="javascript:void(0);">'+e.shop+'</a></div>'+
 							'</div>'+
 						'</div>'+
 					'</div>';
-
 				$this.append(productEl).find('.wishlist').on('click', function() { // add to wish list
 					Cart.wish(this);
 				});
