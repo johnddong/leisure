@@ -44,7 +44,7 @@ var infiniteScroll = (function($, win, doc) {
 			_this: 'product-grid',
 			page: 'page', // current page number
 			code: 'code', // current page id
-			ajaxPath: 'js/api-temp/product-list.json'
+			ajaxPath: 'beango/js/api-temp/product-list.json'
 		},
 		v = $.extend(true, defaults, options);
 		$this = $('.'+v._this),
@@ -150,25 +150,23 @@ var infiniteScroll = (function($, win, doc) {
 			if (json.search == '') return;
 			$.each(json.search, function(i, e) {
 				anchor = (i == 0) ? '<a name="pg'+pageNum+'"></a>' : '';
-				colClass = (getViewType() == viewType.default) ? 'col-ss-6' : 'col-ss-12';
+				colClass = (getViewType() == viewType.default) ? 'col-6' : 'col-lg-2';
 				productEl =
 					anchor +
-					'<div class="'+colClass+' col-xs-6 col-sm-4 col-md-4 col-lg-3">'+
-						'<div class="product-item layout1">'+
-							'<div class="product-inner">'+
-								'<div class="thumb">'+
-									'<div class="group-button">'+
-										'<a href="javascript:void(0);" class="wishlist-button wishlist" data-sku="'+e.btn.pid+'" data-type="wishlist"></a>'+
-									'</div>'+
-									'<a href="'+e.url+'"><img src="'+e.image+'" alt=""></a>'+
+					'<div class="item '+colClass+'">'+
+						'<div class="cont">'+
+							'<div class="photo">'+
+								'<a href="https://herbuy.jollybuy.com/Goods/Detail/20171222155633248">'+
+								'<img class="img-fluid" src="'+e.image+'" alt="">'+
+								'</a>'+
+							'</div>'+
+							'<div class="info">'+
+								'<div class="desc"><a href="javascript:void(0);">'+e.desc+'</a></div>'+
+								'<div class="price-group">'+
+								'<div class="fixed-price">'+e.fixed_price+'</div>'+
+								'<div class="sale-price">$<span>'+e.sale_price+'</span></div>'+
 								'</div>'+
-								'<div class="info">'+
-									'<a href="'+e.url+'" class="product-name">'+e.desc+'</a>'+
-									'<div class="price">'+
-										'<span class="del"><span>'+e.fixed_price+'</span></span>'+
-										'<span class="ins">$<span>'+e.sale_price+'</span></span>'+
-									'</div>'+
-								'</div>'+
+								'<div class="shop"><a href="javascript:void(0);">吉室商行</a></div>'+
 							'</div>'+
 						'</div>'+
 					'</div>';
@@ -184,11 +182,6 @@ var infiniteScroll = (function($, win, doc) {
 	
 	errorMsg = function() {
 		rmLoader();
-		$.notify({
-			message: '系統異常，請稍候再試'
-		}, {
-			type: 'warning'
-		});
 	},
 
 	addLoader = function() {

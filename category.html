@@ -389,6 +389,8 @@
     <div><a href="mailto:Jollybuy_cs@jollywiz.com">聯絡我們</a></div>
   </div>
 <!--end of left slider content -->
+  <script type="text/javascript" src="beango/js/load_script.js"></script>
+  <script type="text/javascript" src="beango/js/infiniteScroll.js"></script>
   <script type="text/javascript" src="beango/js/bootstrap.min.js" ></script>
   <script type="text/javascript" src="beango/js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script type="text/javascript" src="beango/js/owl.carousel.min.js"></script>
@@ -399,6 +401,11 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-2205396-38');
+
+    $(function() {
+			/* infinite scroll */
+			infiniteScroll.init({_this: 'pro-grid-style01'});
+		});	
   </script>
 </body>
 </html>
