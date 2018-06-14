@@ -328,7 +328,7 @@ nav .btn a{
 .product-defult .sale-price{
   color: #de002a;
   font-weight: bold;
-  display: inline-block;
+  display: block;
   margin-left: 2px;
 }
 .product-defult .sale-price span{
@@ -386,6 +386,15 @@ nav .btn a{
 }
 .product-list .desc{
   max-height: 60px;
+}
+.product-defult .promo-icon{
+  margin-top: 10px;
+  font-size: 0;
+}
+.product-defult .promo-icon img{
+  display: inline-block;
+  width: 25px;
+  height: auto;
 }
 /*
   owl-nav
@@ -573,6 +582,19 @@ slideshow
     padding: 0 30px;
   }
 }
+
+/* 導購banner */
+.index-banner{
+  display: inline-block;
+  padding: 0 15px;
+}
+.index-banner a.link{
+  float: left;
+  width: 49%;
+}
+.index-banner a.link:first-child{
+  margin-right: 2%;
+}
 /*promo*/
 .promo-section{
   /* margin-top: 1.2em; */
@@ -608,10 +630,11 @@ slideshow
   background-size: contain;
   width: 10px;
   height: 20px;
-  margin-bottom: 10px;
+  padding: 0;
 }
 .promo-section .desc{
   display: inline-block;
+  white-space: normal;
 }
 .promo-section .timer{
   width: 170px;
@@ -628,7 +651,7 @@ slideshow
   margin: 0 2px;
 }
 .promo-section .ad{
-  margin-bottom: 10px;
+  padding: 5px;
 }
 .promo-section .row{
   margin: 0 0;
@@ -658,6 +681,20 @@ slideshow
 .promo-section .grid .sale-price span{
   font-size: 25px;
 }
+.promo-section .btn-group-buy{
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  background-color: #de002a;
+  border-radius: 25px;
+  color: #FFF;
+  line-height: 29px;
+  vertical-align: bottom;
+  text-align: center;
+}
+.promo-section .btn-group-buy:hover{
+  background-color: #CD0000;
+}
 /* 1人獨享超好買 */
 .promo-limited-time{
   padding-left: 15px;
@@ -671,9 +708,14 @@ slideshow
 }
 .promo-limited-time .item{
   width: 100%;
-  height: auto;
+  height: auto;  
+  padding: 0 5px 5px;
+}
+.promo-limited-time .item .cont{
   border: solid 1px #C1C1C1;
-  padding: 2px;
+}
+.promo-limited-time .row .item .cont a img{
+  width: 100%;
 }
 /*三人團購限時*/
 .promo-shopping-guide{
@@ -733,20 +775,6 @@ slideshow
 .promo-shopping-guide .product-defult .price-group .fixed-price{
   text-decoration: none;
 }
-.promo-shopping-guide .product-defult .btn-group-buy{
-  display: inline-block;
-  width: 90px;
-  height: 30px;
-  background-color: #de002a;
-  border-radius: 25px;
-  color: #FFF;
-  line-height: 29px;
-  vertical-align: top;
-  text-align: center;
-}
-.promo-shopping-guide .product-defult .btn-group-buy:hover{
-  background-color: #CD0000;
-}
 @media (max-width: 575.98px) {
   .promo-shopping-guide .product-defult .price-group{
     width: 100%;
@@ -789,7 +817,7 @@ slideshow
 }
 .promo-recommend .headline{
   color: #555;
-  font-size: 1.1em;
+  font-size: 20px;
   font-weight: bold;
   border-bottom: 1px solid #eee;
   padding: 10px 0;
@@ -804,10 +832,57 @@ slideshow
   }
 }
 /* 爆款好店快去逛 & 小編推薦不停購 */
+.promo-good-shop .bodyer .test{
+  display: block;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling:touch;
+}
+.promo-good-shop .bodyer .test .item{
+  display: inline-block;
+  position: relative;
+  width: calc(100% / 3.5);
+  vertical-align: top;
+  overflow: hidden;
+}
+.promo-good-shop .bodyer .test .see-more{
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+}
+.promo-good-shop .bodyer .test .see-more .arrow{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+  height: 120px;
+  background-image:none; 
+}
 @media (max-width: 992px) {
   .promo-good-shop .section2,
   .promo-recommend .section2{
     padding-top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .promo-good-shop .grid .sale-price{
+    font-size: 14px;
+  }
+  .promo-good-shop .grid .sale-price span,
+  .promo-good-shop .price-group .fixed-price{
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .product-defult .promo-icon img{
+    width: 19px;
   }
 }
 
@@ -816,23 +891,72 @@ slideshow
   padding-left: 15px;
   padding-right: 15px;
 }
-.promo-hot .bodyer{
-  background-color: #fff;
-  border: solid 1px #C1C1C1;
-  padding-left: 10px;
-  padding-right: 10px;
+.promo-hot .bodyer .row .item{
+  padding: 0 0 10px;  
 }
-.promo-hot .bodyer .row,
+.promo-hot .bodyer .row .item + .item{
+  padding-left: 10px;  
+}
 .promo-hot .bodyer .cont{
-  border-bottom: solid 1px #C1C1C1;
+  padding: 10px;
+  background-color: #FFF;  
+  border: solid 1px #C1C1C1;
 }
-.promo-hot .bodyer .row:last-child,
-.promo-hot .bodyer .cont:last-child{
-  border-bottom: none;
+.promo-hot .bodyer .cont .photo{
+  width: 40%;
+}
+.promo-hot .bodyer .cont .info{
+  width: 55%;
+}
+.promo-hot .bodyer .cont .info .price-group .fixed-price{
+  font-size: 12px;
 }
 @media (min-width: 992px) {
   .promo-hot .bodyer .cont{
-    border-bottom: none;
+    padding: 5px;
+  }  
+}
+@media (max-width: 575.98px){
+  .promo-hot .bodyer .row:first-child{
+    border-top: solid 1px #C1C1C1;
+  }
+  .promo-hot .bodyer .row .item,
+  .promo-hot .bodyer .row .item + .item{
+    padding: 0;
+  }
+  .promo-hot .bodyer .row:first-child .item:first-child .cont::before,
+  .promo-hot .bodyer .row:first-child .item:first-child .cont::after{
+    display: none;
+  }
+  .promo-hot .product-list .cont{
+    padding: 5px;
+    border-top: 0;
+  }
+  .promo-hot .product-list .cont::before{
+    position: absolute;
+    left: 1px;
+    top: -1px;
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+  }
+  .promo-hot .product-list .cont::after{
+    position: absolute;
+    right: 1px;
+    top: -1px;
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+  }
+  .promo-hot .product-list .photo{
+    width: 40%;
+  }
+  .promo-hot .product-list .info{
+    width: 55%;
   }
 }
 /* 今日新品快去挖 */
@@ -906,6 +1030,7 @@ footer{
 }
 .fixed-footer a{
   display: block;
+  position: relative;
   background-position-x: center;
   background-repeat: no-repeat;
   padding-top: 30px;
@@ -913,6 +1038,11 @@ footer{
 .fixed-footer .goback a{background-image: url("../images/icon/footer/icon-home.png"); background-size: 30px auto;}
 .fixed-footer .dollar a{background-image: url("../images/icon/footer/icon-dollar.png");}
 .fixed-footer .shop a{background-image: url("../images/icon/footer/icon-shop.png?v=1.0"); background-size: 30px auto;}
+/*.fixed-footer .shop a::before{
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}*/
 .fixed-footer .member a{background-image: url("../images/icon/footer/icon-member.png"); background-size: 30px auto;}
 .fixed-footer .cart a{background-image: url("../images/icon/footer/icon-cart.png"); background-size: 30px auto;}
 .fixed-footer .cart a:hover{background-image: url("../images/icon/footer/icon-cart-hover.png");}
