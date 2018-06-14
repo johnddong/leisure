@@ -163,6 +163,15 @@
     nav:true,
     navText: ['<i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>']
   });
+  $('.slider-item5').owlCarousel({
+    items:2,
+    stagePadding: 40,
+    loop:true,
+    margin:10,
+    nav:true,
+    lazyLoad: true,
+    navText: ['<i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>']
+  });
   var
   $owl = $('.owl-carousel'),
   isMobile = mobilecheck();
