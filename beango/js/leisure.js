@@ -33,7 +33,8 @@
     menu_options = {
       axis:"x",
       theme:"minimal",
-      alwaysShowScrollbar: 1
+      alwaysShowScrollbar: 1,
+      set_width: true
     };
     $menuItem.each(function(){
       if($(this).data('nav') == nav_value ){
@@ -46,7 +47,7 @@
   // nav scrollbar style
   $menu.mCustomScrollbar(menu_options);
   $submenu.mCustomScrollbar(menu_options);
-
+  
   /*側欄選單*/
   var
   $overlay = $('.overlay'),
@@ -158,18 +159,18 @@
   });
   $('.slider-item4').owlCarousel({
     items:4,
+    stagePadding: 25,
     loop:true,
     margin:10,
     nav:true,
     navText: ['<i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>']
   });
   $('.slider-item5').owlCarousel({
-    items:2,
-    stagePadding: 40,
-    loop:true,
+    items:3,
+    stagePadding: 30,
+    loop:false,
     margin:10,
     nav:true,
-    lazyLoad: true,
     navText: ['<i class="fa fa-angle-left fa-4x" aria-hidden="true"></i>','<i class="fa fa-angle-right fa-4x" aria-hidden="true"></i>']
   });
   var

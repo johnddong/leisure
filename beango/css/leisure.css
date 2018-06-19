@@ -733,12 +733,41 @@ slideshow
   margin-bottom: 10px;
 }
 @media (max-width: 575.98px) {
+  .promo-shopping-guide .row{
+    border-top: solid 1px #C1C1C1;
+  }
   .promo-shopping-guide .item{
     padding: 0;
+    margin: 0;
   }
   .promo-shopping-guide .item .cont{
     padding: 5px;
+    border-top: 0;
     overflow: hidden;;
+  }
+  .promo-shopping-guide .item .cont::before{
+    position: absolute;
+    left: 1px;
+    top: -1px;
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+  }
+  .promo-shopping-guide .item .cont::after{
+    position: absolute;
+    right: 1px;
+    top: -1px;
+    display: inline-block;
+    width: 5px;
+    height: 1px;
+    background-color: #FFF;
+    content: "";
+  }
+  .promo-shopping-guide .row:first-child .item:first-child .cont::before,
+  .promo-shopping-guide .row:first-child .item:first-child .cont::after{
+    display: none;
   }
   .promo-shopping-guide .item .cont .photo{
     float: left;
@@ -831,44 +860,32 @@ slideshow
     /* padding-top: 35px; */
   }
 }
-/* 爆款好店快去逛 & 小編推薦不停購 */
-.promo-good-shop .bodyer .test{
-  display: block;
-  position: relative;
-  width: 100%;
-  white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling:touch;
-}
-.promo-good-shop .bodyer .test .item{
-  display: inline-block;
-  position: relative;
-  width: calc(100% / 3.5);
-  vertical-align: top;
-  overflow: hidden;
-}
-.promo-good-shop .bodyer .test .see-more{
-  position: absolute;
-  bottom: 0;
-  height: 100%;
-}
-.promo-good-shop .bodyer .test .see-more .arrow{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding: 0;
-  width: 100%;
-  height: 120px;
-  background-image:none; 
+/* 爆款好店快去逛  */
+
+/*
+.promo-good-shop .bodyer .test{ display: block; position: relative; width: 100%; white-space: nowrap; overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling:touch;}
+.promo-good-shop .bodyer .test::-webkit-scrollbar{ display:none; height: 7px;}
+.promo-good-shop .bodyer .test:hover::-webkit-scrollbar{ display:block;}
+.promo-good-shop .bodyer .test::-webkit-scrollbar-thumb { position:relative; background:#C1C1C1; border:0; border-radius:5px; transtion:0.2s; -webkit-appearance:none;}
+.promo-good-shop .bodyer .test::-webkit-scrollbar-track { cursor:pointer; background:#FFF; border-radius:5px}
+.promo-good-shop .bodyer .test::-moz-scrollbar-track { background:#d7d7d7; border:0} 
+.promo-good-shop .bodyer .test::-moz-scrollbar-thumb { width:1px; height:1px; background:#C1C1C1; border:0; border-radius:10px} 
+.promo-good-shop .bodyer .test::-moz-scrollbar-thumb:hover,
+.promo-good-shop .bodyer .test:active::-moz-scrollbar-thumb { width:1px; height:1px}
+*/
+
+.promo-good-shop .bodyer .owl-stage {
+  left: -25px;
 }
 @media (max-width: 992px) {
   .promo-good-shop .section2,
   .promo-recommend .section2{
     padding-top: 10px;
+  }
+}
+@media (max-width: 375px) {
+  .product-defult .promo-icon img{
+    width: 17px;
   }
 }
 @media (max-width: 320px) {
@@ -880,10 +897,19 @@ slideshow
     font-size: 16px;
   }
 }
-@media (max-width: 375px) {
-  .product-defult .promo-icon img{
-    width: 19px;
-  }
+
+/* 小編推薦不停購 */
+.promo-recommend .bodyer .test{
+  display: block;
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling:touch;
+}
+.promo-recommend .bodyer .owl-stage {
+  left: -25px;
 }
 
 /* 今日好物最熱賣 */
