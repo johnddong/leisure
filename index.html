@@ -11,7 +11,6 @@
   <link href="beango/css/jquery.mCustomScrollbar.min.css" rel="stylesheet" tyle="text/css">
   <link href="beango/css/animate.css" rel="stylesheet" tyle="text/css">
   <link href="beango/css/icon.css" rel="stylesheet" type="text/css">
-  <link href="beango/css/main.css" rel="stylesheet" type="text/css">
   <link href="beango/css/leisure.css?v=1" rel="stylesheet" type="text/css">  
   <script type="text/javascript" src="beango/js/jquery-2.1.4.min.js"></script>
 </head>
@@ -20,19 +19,19 @@
     <header>
       <div class="row content-with">
         <div id="menu" class="col">
-          <button class="navbar-toggler" id="navbarSideButton" type="button">&#9776;</button>
+          <i class="icon-list icon-m" id="navbarSideButton"></i>
           </div>
         <div class="col logo">
           <a href="#"><img src="beango/images/logo.png?v=1" alt="有閑"></a>
         </div>
         <div id="search" class="col">
-          <a href="#"><i class="fa fa-search fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="icon-search icon-m" aria-hidden="true"></i></a>
         </div>
         <div id="menu-list" class="col">
           <ul>
-            <li class="shop"><a href="https://dev-admin.jollybuy.com/Member/Order">我的訂單</a></li>
-            <li class="member"><a href="https://dev-www.jollybuy.com/Member/IndexNew">會員中心</a></li>
-            <li class="cart"><a href="javascript:void(0);">購物車</a></li>
+            <li class="shop"><a href="https://dev-admin.jollybuy.com/Member/Order"><i class="icon-listalt icon-s"></i>我的訂單</a></li>
+            <li class="member"><a href="https://dev-www.jollybuy.com/Member/IndexNew"><i class="icon-user icon-s"></i>會員中心</a></li>
+            <li class="cart"><a href="javascript:void(0);"><i class="icon-shoppingcart icon-s"></i>購物車</a></li>
           </ul>
         </div>
       </div>
@@ -65,7 +64,7 @@
               </select>
               <input type="text" name="k" autocomplete="off">
               <button type="submit" class="search-button">
-                <i class="fa fa-search"></i>
+                <i class="icon-search icon-s"></i>
               </button>
             </div>
           </form>
@@ -951,10 +950,10 @@
     <footer>
       <div class="fixed-footer">
         <ul>
-          <li class="goback"><a href="https://dev-www.jollybuy.com/Beango/IndexNew">回有閑</a></li>
-          <li class="shop"><a href="https://dev-admin.jollybuy.com/Member/Order">我的訂單</a></li>
-          <li class="member"><a href="https://dev-www.jollybuy.com/Member/IndexNew">會員中心</a></li>
-          <li class="cart"><a href="javascript:void(0);">購物車</a></li>
+          <li class="goback"><a href="https://dev-www.jollybuy.com/Beango/IndexNew"><i class="icon-home icon-m"></i>回有閑</a></li>
+          <li class="shop"><a href="https://dev-admin.jollybuy.com/Member/Order"><i class="icon-listalt icon-m"></i>我的訂單</a></li>
+          <li class="member"><a href="https://dev-www.jollybuy.com/Member/IndexNew"><i class="icon-user icon-m"></i>會員中心</a></li>
+          <li class="cart"><a href="javascript:void(0);"><i class="icon-shoppingcart icon-m"></i>購物車</a></li>
         </ul>
       </div>
       <div class="footer">
@@ -973,16 +972,16 @@
 <!-- /#wrapper -->
 <!-- left slider content -->
   <div id="navbarSide" class="navbar-side">
-    <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+    <span class="close"><i class="icon-times icon-m" aria-hidden="true"></i></span>
     <div><a href="javascript:void(0);">全站分類</a></div>
     <div>
       <ul>
-        <li><a class="digital" href="category.html">數位</a></li>
-        <li><a class="food" href="category.html">食品</a></li>
-        <li><a class="home" href="category.html">居家</a></li>
-        <li><a class="fashion" href="category.html">時尚</a></li>
-        <li><a class="casual" href="category.html">休閒</a></li>
-        <li><a class="mom" href="category.html">母嬰</a></li>
+        <li><a class="digital" href="category.html"><i class="icon-laptop icon-m"></i>數位</a></li>
+        <li><a class="food" href="category.html"><i class="icon-utensils icon-m"></i>食品</a></li>
+        <li><a class="home" href="category.html"><i class="icon-couch icon-m"></i>居家</a></li>
+        <li><a class="fashion" href="category.html"><i class="icon-shoppingpurse icon-m"></i>時尚</a></li>
+        <li><a class="casual" href="category.html"><i class="icon-bicycle icon-l"></i>休閒</a></li>
+        <li><a class="mom" href="category.html"><i class="icon-babycarriage icon-m"></i>母嬰</a></li>
       </ul>
     </div>
     <div><a href="http://dev-www.jollybuy.com/act/mb-about.html">關於有閑</a></div>
@@ -1002,8 +1001,7 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'UA-2205396-38');
-    
+    gtag('config', 'UA-2205396-38');    
   </script>
 </body>
 </html>

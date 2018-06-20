@@ -192,7 +192,8 @@ var infiniteScroll = (function($, win, doc) {
 				clear: 'both',
 				opacity: 0,
 				position: 'absolute',
-				bottom: 10
+				bottom: 10,
+				left: 0
 			}).addClass(c.loader).insertAfter($this);
 		}
 	},
