@@ -77,8 +77,9 @@
   $win.resize(function() {
     if($win.width()>992){
       $nav.show();
-      $searchbar.show();
+      $searchbar.show();      
     }
+    aboutwinresize(); //about page top img change on resize
   });
 
   /*countdown*/
@@ -246,5 +247,52 @@
       });
     }
   });
+
+  /***-- 關於有閑 about start --***/
+  //QA
+  $('.qa select').change(function () {
+    var $this = $(this);
+    $.getJSON('beango/js/api-temp/qa-list.json', function(json) {
+      var $option = $this.val();
+      var $qa = $('.qa .qa-list');
+      var html = "";
+      for(var i=0;i<json[$option].length;i++){
+        html += '<li>';
+        html += '<div class="question">'+ json[$option][i].quest +'<i class="icon-arrowright icon-m"></i></div>';
+        html += '<div class="answer">'+ json[$option][i].answer +'</div>';
+        html += '</li>';
+      }
+      $('.qa .qa-list ul').html(html);
+      
+      $qa.find('li').eq(0).addClass('active');
+      $qa.find('li').on('click',function(){
+        var $this = $(this);    
+        $this.addClass('active').siblings().removeClass('active');
+      });
+    });    
+  }).change();
+  
+  //top menu scroll
+  function goToByScroll(id){
+    var $id = id.replace("-link","");
+    $('html,body').animate({
+        scrollTop: $("#"+$id).offset().top},'slow');
+  }
+  $("#menu-list ul li").click(function(e) { 
+    e.preventDefault();
+    goToByScroll($(this).attr("id"));
+  });
+
+  //top img change on resize
+  function aboutwinresize(){
+    if ( document.body.clientWidth > 320 ) {
+      $("#top-img").attr('src',"beango/images/about/bn-about-pc.png");
+    }
+    else {
+      $("#top-img").attr('src',"beango/images/about/banner-about-mb.jpg");
+    }
+  }
+
+  /***-- end of 關於有閑 about --***/
 
 })(jQuery);
