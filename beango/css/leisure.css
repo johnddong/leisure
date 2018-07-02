@@ -137,7 +137,6 @@ header #search i{
   top: 0;
   left: -180px;
   list-style: none;
-  border-left: 2px solid #ccc;
   z-index: 1000;
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
