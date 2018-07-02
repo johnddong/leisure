@@ -51,6 +51,9 @@ header{
   padding: 0 15px;
   margin-bottom: 40px;/*for bottom  */
 }
+header #menu{
+  padding: 0 15px;
+}
 header .logo{
   text-align: center;
 }
@@ -70,6 +73,11 @@ header #search i{
 }
 #menu-list {
   display: none;
+}
+@media (max-width: 992px) {
+  header .logo{
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   header .logo{
@@ -202,12 +210,15 @@ header #search i{
 }
 nav .btn{
   float: left;
+  margin-left: 10px;
+  height: 40px;
   border-radius: 0;
-  padding-top: 0;
 }
 nav .btn a{
+  display: block;
   font-size: 13px;
   color: #fff;
+  vertical-align: text-top;
 }
 #scrollmenu a{
   width: 39px;
@@ -229,7 +240,7 @@ nav .btn a{
     text-decoration: none;
 }
 #scrollmenu a.active{
-    color: #fff;
+    color: #ff3f56;
 }
 .scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar{
   cursor: pointer;
@@ -237,15 +248,20 @@ nav .btn a{
 .scrollmenu .mCS-minimal.mCSB_scrollTools .mCSB_draggerRail{
   background-color: #FF0000;
 }
-@media (min-width: 460px) {
+@media (max-width: 992px) {
+  nav .btn{
+    margin: 0;
+  }
+}
+@media (min-width: 515px) {
   nav{
     float: left;
-    width: 445px;
+    width: 515px;
     overflow: hidden;
   }  
   .nav #scrollmenu{
     width: 515px;
-    margin-left:5px;
+    margin-left: 15px;
   }
   #scrollmenu a{
     margin: 0;
@@ -263,14 +279,11 @@ nav .btn a{
 }
 /*pc nav search*/
 .search-form{
-  display: none;
   position: absolute;
-  top: -35px;
-  left: 0;
-  right: 0;
-  width: 70%;
+  top: -33px;
+  right: 15px;
+  width: calc(100% - 70px);
   margin: 0px auto;
-  padding-top: 3px;
 }
 .search-form.open{
   display: block;

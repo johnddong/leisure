@@ -30,6 +30,7 @@
     $submenu =  $('.scrollmenu'),
     $menuItem = $menu.find('a'),
     nav_value = getParam('nav'),
+    $nav_img = $('.nav .btn img');
     menu_options = {
       axis:"x",
       theme:"minimal-dark",
@@ -43,6 +44,10 @@
         $(this).removeClass('active');
       }
     });
+
+    if( $nav_img.length == 0 ) {
+      $('nav .btn').hide();
+    }
 
   // nav scrollbar style
   $menu.mCustomScrollbar(menu_options);
@@ -68,26 +73,15 @@
   var
   $win = $(window),
   $nav = $('nav'),
-  $searchbar = $('#searchbar'),
-  $logo = $('.logo');
+  $searchbar = $('#searchbar')
 
-  $('#search').on('click',function(){
-	  $searchbar.toggleClass('open');
-    logovisible();
-  });
+  /*$('#search').on('click',function(){
+	  $searchbar.toggle('slow');
+  });*/
   
   $win.resize(function() {
     aboutwinresize(); //about page top img change on resize
-	  logovisible();
   });
-
-  var logovisible = function(){
-    if($win.width() < 992 && $searchbar.is(':visible')) {
-      $logo.hide();
-    }else {
-      $logo.show();
-    }
-  }
 
   /*countdown*/
   // Update the count down every 1 second
