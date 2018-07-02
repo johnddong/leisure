@@ -52,14 +52,6 @@
 .search-result{
   padding-top: 20px;
 }
-@media (max-width: 991.98px) {
-  nav{
-    display: none;
-  }
-  .search-form{
-    display: block;
-  }
-}
 .search-result .empty{
   text-align: center;
   padding-top: 19%;

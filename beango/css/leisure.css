@@ -116,12 +116,13 @@ header #search i{
   color: #fff;
   outline: none;
   margin-top: 12px;
+  cursor: pointer;
  }
  .navbar-side {
   color: #fff;
   font-size: 1.1em;
   letter-spacing: 2px;
-  background-color: #333;
+  background-color: #fafafa;
   height: 100%;
   width: 180px;
   position: fixed;
@@ -137,15 +138,15 @@ header #search i{
   transition: 300ms ease;
   padding: 20px;
 }
-.navbar-side a{
-  color: #fff;
-}
 .navbar-side>div{
-  border-bottom: solid 1px #666;
+  border-bottom: solid 1px #e1e1e1;
   padding: 10px 0;
 }
 .navbar-side>div:last-child{
   border-bottom: none;
+}
+.navbar-side>div a:hover{
+  color: #ff3f56;
 }
 .navbar-side li{
   display: inline-block;
@@ -163,7 +164,7 @@ header #search i{
   top: 8px;
 }
 .navbar-side .close{
-  color: #fff;
+  color: #777;
   position: absolute;
   top: 5px;
   right: 5px;
@@ -193,8 +194,7 @@ header #search i{
 
 /*nav*/
 .nav{
-  overflow: hidden;
-  background-color: #333;
+  background-color: #FFF;
   width: 100%;
   position: absolute; /*for bottom pc nav*/
   height: 40px;
@@ -210,7 +210,8 @@ nav .btn a{
   color: #fff;
 }
 #scrollmenu a{
-  width: 37px;
+  width: 39px;
+  font-size: 14px;
   overflow: hidden;
 }
 #scrollmenu,
@@ -221,9 +222,10 @@ nav .btn a{
 #scrollmenu a,
 .scrollmenu a{
     display: inline-block;
-    color: #ddd;
+    color: #777;
     text-align: center;
-    padding:5px 10px;
+    margin-right: 3%;
+    padding:10px;
     text-decoration: none;
 }
 #scrollmenu a.active{
@@ -232,27 +234,23 @@ nav .btn a{
 .scrollbar-dynamic > .scroll-element.scroll-x .scroll-bar{
   cursor: pointer;
 }
-.nav #scrollmenu{
-    background-color: #333;
-    margin-left: 95px;
+.scrollmenu .mCS-minimal.mCSB_scrollTools .mCSB_draggerRail{
+  background-color: #FF0000;
 }
-@media (max-width: 991.98px) {
-  .nav{
-    padding-top: 5px;
-  }
-}
-@media (min-width: 992px) {
+@media (min-width: 460px) {
   nav{
     float: left;
-    padding-bottom: 7px;
-    padding-top: 5px;
-  }
+    width: 445px;
+    overflow: hidden;
+  }  
   .nav #scrollmenu{
     width: 515px;
-    margin-left:85px;
+    margin-left:5px;
   }
   #scrollmenu a{
-    color: #bbb;
+    margin: 0;
+    padding: 10px 5px;
+    color: #777;
     width: auto;
   }
   #scrollmenu a,
@@ -260,21 +258,28 @@ nav .btn a{
     margin-bottom: 5px;
   }
   #scrollmenu a:hover {
-      color: #fff
+      color: #ff3f56;
   }
 }
 /*pc nav search*/
 .search-form{
   display: none;
-  width: 80%;
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  width: 70%;
   margin: 0px auto;
   padding-top: 3px;
 }
+.search-form.open{
+  display: block;
+}
 .search-form .wrap{
-  background-color: #1f1f1f;
   border-radius: 16px;
   position: relative;
   padding: 0px 8px;
+  background-color: #e5e5e5;
 }
 .search-form .search-button{
   position: absolute;
@@ -297,6 +302,7 @@ nav .btn a{
   height: 20px;
 }
 .search-form input{
+  width: 300px;
   height: 25px;
   color: #777;
   background: transparent;
@@ -304,6 +310,8 @@ nav .btn a{
   outline: none;
 }
 .search-form select{
+  margin: 3px 0;
+  width: 55px;
   color: #777;
   background: transparent;
   border: none;
@@ -313,17 +321,27 @@ nav .btn a{
 }
 @media (min-width: 992px) {
   .nav .search-form{
-    width: 245px;
+    position: relative;
+    top: inherit;
+    right: inherit;
+    left: inherit;
+    width: 475px;
     float: right;
     display: block;
     padding-top: 0px;
     margin: 0px auto;
     margin-top: 8px;
+  }  
+}
+@media (max-width: 992px) {
+  .search-form .wrap{
+    background-color: #FFF;
   }
 }
+
 @media (max-width: 575.98px) {
   .nav .search-form input{
-    width: calc(100vw - 180px);
+    width: calc(100vw - 255px);
   }
 }
 /*product style*/

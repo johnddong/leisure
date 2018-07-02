@@ -32,7 +32,7 @@
     nav_value = getParam('nav'),
     menu_options = {
       axis:"x",
-      theme:"minimal",
+      theme:"minimal-dark",
       alwaysShowScrollbar: 1,
       set_width: true
     };
@@ -68,19 +68,26 @@
   var
   $win = $(window),
   $nav = $('nav'),
-  $searchbar = $('#searchbar');
+  $searchbar = $('#searchbar'),
+  $logo = $('.logo');
 
   $('#search').on('click',function(){
-    $nav.toggle('slow');
-    $searchbar.toggle('slow');
+	  $searchbar.toggleClass('open');
+    logovisible();
   });
+  
   $win.resize(function() {
-    if($win.width()>992){
-      $nav.show();
-      $searchbar.show();      
-    }
     aboutwinresize(); //about page top img change on resize
+	  logovisible();
   });
+
+  var logovisible = function(){
+    if($win.width() < 992 && $searchbar.is(':visible')) {
+      $logo.hide();
+    }else {
+      $logo.show();
+    }
+  }
 
   /*countdown*/
   // Update the count down every 1 second
