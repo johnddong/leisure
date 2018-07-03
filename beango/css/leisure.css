@@ -38,7 +38,8 @@ ul,li{
     margin-bottom: 0px;
   }
   .content-with{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
@@ -47,7 +48,7 @@ header
 */
 header{
   height: 40px;
-  background-color: #EB0045;
+  background-color: #e61414;
   padding: 0 15px;
   margin-bottom: 40px;/*for bottom  */
 }
@@ -99,7 +100,7 @@ header #search i{
   }
   #menu-list li a{
     position: relative;
-    color: #ffa8bd;
+    color: #FFF;
     display: block;
     height: 30px;
     background-repeat: no-repeat;
@@ -107,13 +108,16 @@ header #search i{
     padding-top: 5px;
     padding-right: 10px;
     padding-left: 30px;
+    font-size: 15px;
+    font-family: "微軟正黑體";
+    font-weight: 700;
   }
   #menu-list li a i{
     position: absolute;
     left: 6px;
-    top: 9px;
+    top: 10px;
   }
-  #menu-list li a:hover{color: #fff;}
+  #menu-list li a:hover{color: #ffa8bd;}
   #menu-list li.dollar a{background-image: url("../images/icon/menu/icon-dollar.png");}
   #menu-list li.dollar a:hover{background-image: url("../images/icon/menu/icon-dollar-hover.png");}
 }
@@ -169,6 +173,23 @@ header #search i{
   position: absolute;
   left: 5px;
   top: 8px;
+}
+.navbar-side .side-app-link{
+  display: inline-block;
+}
+.navbar-side .side-app-link ul li{
+  float: left;
+  margin: 7px;
+  width: 32px;
+  height: 32px;
+}
+.navbar-side .side-app-link ul li a{
+  padding: 0;
+}
+.navbar-side .side-app-link ul li i{
+  position: relative;
+  top: inherit;
+  left: inherit;
 }
 .navbar-side .close{
   color: #777;
@@ -469,8 +490,10 @@ nav .btn a{
 slideshow
 */
 .main-slideshow{
+  position: relative;
   background-color: #ddd;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 .main-slideshow .slide-item >a{
   width: inherit;
@@ -592,6 +615,20 @@ slideshow
 .main-slideshow .slide-content-1 a.button{
     display: none;
 }
+.main-slideshow .slide-title{  
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: inline-block;
+  z-index: 1;
+  width: 73%;
+  height: 40vh;
+  font: bold 15vmin/1.2em 微軟正黑體;
+  color: #FFF;
+}
 @media (max-width: 1199.98px) {
   .item-background {
     background-position: center;
@@ -634,6 +671,10 @@ slideshow
     width: 100%;
     padding: 0 30px;
   }
+  /* .main-slideshow .slide-title{
+    height: 35%;;
+    font: bold 55px/1.2em 微軟正黑體;
+  } */
 }
 
 /* 導購banner */
@@ -1131,15 +1172,15 @@ footer .footer{
   display: none;
   color: #ffa8bd;
   text-align: center;
-  background-color: #EB0045;
+  background-color: #e61414;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 20px;
 }
 footer .footer li a,
 footer .footer li a:link,
-footer .footer li a:visited{color: #ffa8bd; }
-footer .footer li a:hover{color: #fff;}
+footer .footer li a:visited{color: #FFF; }
+footer .footer li a:hover{color: #ffa8bd;}
 footer .footer li{
   margin: 0px auto 20px auto;
 }
@@ -1155,6 +1196,12 @@ footer .footer li{
   }
   footer .footer li:last-child a{
     border-right: none;
+  }
+  footer .footer .app-link li{
+    margin: 15px;
+  }
+  footer .footer .app-link li a{
+    border: 0;
   }
 }
 .back-to-top {
