@@ -161,9 +161,9 @@ container features(block 01-04) setting
   .main-container .features .cont .txt a.btn-group::before{
     position: absolute;
     bottom: -30px;
-    left: 35px;
+    left: -10px;
     display: inline-block;
-    width: 160px;
+    width: 240px;
     height: 1px;
     background-color: #e5e5e5;
     content: '';
@@ -212,8 +212,7 @@ block setting
 .main-container .go-shopping .cont .txt a.btn-group:hover,
 .main-container .go-supply .cont .txt a.btn-group:hover{ background-color: #008ca1;}
 @media (max-width: 575.98px) {
-  .go-open { margin-bottom: 70%;}
-  .go-supply { margin-bottom: 45%;}
+  .go-open { margin-bottom: 50%;}
 }
 @media (max-width: 414px) {
   .go-supply { margin-bottom: 62%;}
@@ -222,14 +221,14 @@ block setting
   .go-supply { margin-bottom: 78%;}
 }
 @media (max-width: 320px) {
-  .go-open { margin-bottom: 85%;}
+  .go-open { margin-bottom: 60%;}
   .go-supply { margin-bottom: 93%;}
 }
 /*
 intro-txt
 */
 .main-container .intro-txt{
-  padding: 10px 40px 40px; 
+  padding: 20px 40px; 
   background-color: #EEE;
   text-align: center;
 }

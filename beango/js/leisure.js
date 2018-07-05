@@ -279,9 +279,11 @@
     $('html,body').animate({
         scrollTop: $("#"+$id).offset().top},'slow');
   }
-  $("#menu-list ul li").click(function(e) { 
-    e.preventDefault();
-    goToByScroll($(this).attr("id"));
+  $("#menu-list ul li").click(function(e) {
+    if($(this).attr('id') != 'go-contact-link' ){
+      e.preventDefault();
+      goToByScroll($(this).attr("id"));
+    }    
   });
 
   //top img change on resize
