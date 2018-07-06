@@ -1,0 +1,80 @@
+[
+  {
+    "title": "第一堂 基本設定",
+    "video": [
+      {
+        "name":"新手開店第一次上手",
+        "src":"https://www.w3schools.com/html/mov_bbb.mp4"
+      },
+      {
+        "name":"設定商品付款方式",
+        "src":""
+      },
+      {
+        "name":"設定我的錢包",
+        "src":""
+      },
+      {
+        "name":"設定出貨方式",
+        "src":""
+      },
+      {
+        "name":"管理我的商品",
+        "src":""
+      }
+    ]
+  },
+  {
+    "title": "第二堂 打造專屬店鋪",
+    "video": [
+      {
+        "name":"首頁上方展示的內容",
+        "src":"https://www.w3schools.com/html/mov_bbb.mp4"
+      },
+      {
+        "name":"Logo、網址、模板選擇",
+        "src":""
+      },
+      {
+        "name":"如何讓商品展示在首頁",
+        "src":""
+      }
+    ]
+  },
+  {
+    "title": "第三堂 成為交易達人",
+    "video": [
+      {
+        "name":"如何查詢訂單和出貨商品",
+        "src":"https://www.w3schools.com/html/mov_bbb.mp4"
+      },
+      {
+        "name":"如何處理退貨訂單",
+        "src":""
+      },
+      {
+        "name":"如何查看交易入帳明細",
+        "src":""
+      }
+    ]
+  },
+  {
+    "title": "第四堂 進階拼團高手",
+    "video": [
+      {
+        "name":"設定特約團主功能",
+        "src":"https://www.w3schools.com/html/mov_bbb.mp4"
+      },
+      {
+        "name":"團主招募計畫",
+        "src":""
+      },
+      {
+        "name":"如何查看拼團成效",
+        "src":""
+      }
+    ]
+  }
+]
+
+
