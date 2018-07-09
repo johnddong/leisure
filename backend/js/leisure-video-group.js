@@ -11,7 +11,7 @@ $(function(){
     });
   }
 
-  $.getJSON('js/api-temp/video-list.json', function(json) {
+  $.getJSON('js/api-temp/video-list-owner.json', function(json) {
 
     for(var i=0;i<json.length;i++){
       var html = "";
