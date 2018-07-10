@@ -288,13 +288,14 @@
 
   //top img change on resize
   function aboutwinresize(){
-    if ( document.body.clientWidth > 320 ) {
+    if ( document.body.clientWidth > 415 ) {
       $("#top-img").attr('src',"beango/images/about/bn-about-pc.png");
     }
     else {
       $("#top-img").attr('src',"beango/images/about/banner-about-mb.jpg");
     }
   }
+  aboutwinresize();
 
   /***-- end of 關於有閑 about --***/
 

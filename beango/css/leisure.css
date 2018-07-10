@@ -26,6 +26,7 @@ ul,li{
   margin-right: 0;
 }
 .main-container{
+  position: relative;
   /* padding: 0 1em; */
   margin-bottom: 90px;
 }
@@ -35,6 +36,7 @@ ul,li{
 @media (min-width: 992px) {
   a:hover{color: #ff3f56;}
   .main-container{
+    position: relative;
     margin-bottom: 0px;
   }
   .content-with{
@@ -280,6 +282,7 @@ nav .btn a{
     overflow: hidden;
   }  
   .nav #scrollmenu{
+    padding-left: 10px;
     width: 515px;
   }
   #scrollmenu a{
@@ -614,28 +617,7 @@ slideshow
 .main-slideshow .slide-content-1 a.button{
     display: none;
 }
-.main-slideshow .tvwall-banner img{
-  width: 100%;
-  height: auto;
-  max-height: 600px;
-  opacity: 0.9;
-}
-.main-slideshow .tvwall-title{  
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  display: inline-block;
-  z-index: 1;
-  width: 90%;
-  height: 40vh;
-  text-align: center;
-  font: bold 14vmin/1.2em 微軟正黑體;
-  color: #FFF;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
-}
+
 @media (max-width: 1199.98px) {
   .item-background {
     background-position: center;
@@ -662,17 +644,8 @@ slideshow
   .main-slideshow .slide-content-1 a.button{
     display: inline-block;
   }
-  .main-slideshow .tvwall-title{
-    height: 30vh;
-    font: bold 12vmin/1.2em 微軟正黑體;
-  }
 }
-@media (max-width: 840px) {
-  .main-slideshow .tvwall-title{
-    height: 25vh;
-    font: bold 10vmin/1.2em 微軟正黑體;
-  }
-}
+
 @media (max-width: 575.98px) {
   .main-slideshow .owl-carousel .owl-nav .owl-prev,
   .main-slideshow .owl-carousel .owl-nav .owl-next {
@@ -688,15 +661,8 @@ slideshow
     width: 100%;
     padding: 0 30px;
   }
-  .main-slideshow .tvwall-title{
-    height: 20vh;
-  }
 }
-@media (max-width: 414px) {
-  .main-slideshow .tvwall-title{
-    height: 14vh;
-  }
-}
+
 
 /* 導購banner */
 .index-banner{
@@ -1326,18 +1292,59 @@ footer .footer li{
 /* 首頁動態載入 */
 .loader{background: url(../images/spinner/spinner.gif) no-repeat center center}
 
-/* 承接頁_三個項目共用樣式 */
+/* 承接頁樣式 */
+.main-slideshow .delivery-img{ background-image: url("../images/banner/tv-wall/BG-PC-delivery.jpg");}
+.main-slideshow .owner-img{ background-image: url("../images/banner/tv-wall/BG-PC-delivery.jpg");}
+.main-slideshow .tvwall-banner{
+  position: relative;
+  margin-bottom: -2%;
+  height: 87vh;
+  background-repeat: no-repeat;
+  background-position: top center;  
+  background-size: 120%;
+  vertical-align: top;
+}
+.main-slideshow .tvwall-title{  
+  position: absolute;
+  top: 10%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: inline-block;
+  z-index: 1;
+  width: 90%;
+  height: 25vh;
+  text-align: center;
+  font: bold 10vmin/1.2em 微軟正黑體;
+  color: #333;
+}
 .main-container .three-item{
+  position: absolute;
+  top: -370px;
+  left: 0;
+  right: 0;
   margin: 0 auto;
   padding: 30px 0;
   max-width: 1140px;
+  width: 45%;
 }
 .main-container .three-item .cont{
-  display: block;
+  display: initial;
 }
-.main-container .three-item .cont .pic img{
-  width: auto;
-  height: auto;
+.main-container .three-item .cont .pic{
+  text-align: center;
+}
+.main-container .three-item .cont .pic i{
+  padding: 20px 13px;
+  font-size: 65px;
+  color: #FFF;
+}
+.main-container .three-item .cont .pic .icon-circle{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background-color: #e61414;
 }
 .main-container .three-item .cont .txt{
   text-align: center;
@@ -1346,21 +1353,93 @@ footer .footer li{
   color: #cd0000;
 }
 .main-container .three-item .cont .txt p{
-  margin: 0 0 5px;
+  margin: 0;
   font-size: 30px;
-  line-height: 45px;
+  line-height: 50px;
   color: #333;
   font-weight: bold;
 }
 .main-container .three-item .cont .txt span{
   display: block;
   font-size: 16px;
-  line-height: 30px;
-  color: #333;
+  font-weight: bold;
+  line-height: 24px;
+  color: #555;
 }
-@media (max-width: 991.98px) {
-  .main-container .three-item .item + .item .cont{
-    padding-top: 25px;
+.main-container .three-item .btn{
+  margin: 10px auto;
+  width: 150px;
+  height: 40px;
+  background-color: #e61414;
+  border-radius: 25px;
+  color: #FFF;  
+  line-height: 26px;  
+}
+@media (max-width: 1090px) {
+  .main-slideshow .tvwall-title{
+    font: bold 8vmin/1.2em 微軟正黑體;
+  }
+  .main-container .three-item{
+    top: -400px;
+  }
+  .main-container .three-item .cont .txt p{
+    font-size: 26px;
+  }
+}
+@media (max-width: 840px) {
+  .main-slideshow .tvwall-title{
+    height: 25vh;
+  }
+}
+@media (max-width: 768px) {
+  .main-slideshow .tvwall-banner{
+    height: 27vh;
+  }
+  .main-container .three-item{
+    position: relative;
+    top: inherit;
+    left: inherit;
+    right: inherit;
+    width: 320px;
+  }
+  .main-container .three-item .item{
+    margin-bottom: 30px;
+  }
+  .main-container .three-item .cont{
+    display: flex;
+  }
+  .main-container .three-item .cont .pic{
+    float: left;
+  }
+  .main-container .three-item .cont .txt{
+    margin-left: 15px;
+    text-align: left;
+    overflow: hidden;
+  }
+  .main-container .three-item .cont .txt p{
+    font-size: 20px; 
+    line-height: 28px;
+  }
+  .main-container .three-item .btn{
+    width: 265px;
+  }
+}
+@media (max-width: 575.98px) {
+  .main-slideshow .delivery-img{ background-image: url("../images/banner/tv-wall/BG-delivery.jpg");}
+  .main-slideshow .owner-img{ background-image: url("../images/banner/tv-wall/BG-PC-delivery.jpg");}
+  .main-slideshow .tvwall-banner{
+    height: 17vh;
+  }
+  .main-slideshow .tvwall-title{
+    height: 20vh;
+    color: #FFF;
+  }
+}
+@media (max-width: 414px) {
+  .main-slideshow .tvwall-title{
+    top: 0;
+    bottom: 0;
+    height: 11vh;
   }
 }
 

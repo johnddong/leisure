@@ -218,11 +218,11 @@ block setting
   .go-supply { margin-bottom: 62%;}
 }
 @media (max-width: 375px) {
-  .go-supply { margin-bottom: 78%;}
+  .go-supply { margin-bottom: 55%;}
 }
 @media (max-width: 320px) {
   .go-open { margin-bottom: 60%;}
-  .go-supply { margin-bottom: 93%;}
+  .go-supply { margin-bottom: 65%;}
 }
 /*
 intro-txt
@@ -232,23 +232,13 @@ intro-txt
   background-color: #EEE;
   text-align: center;
 }
-.main-container .intro-txt p{
-  margin: 25px 0;
-  font-size: 30px;
-  line-height: 45px;
-  color: #333;
-  font-weight: bold;
-}
 .main-container .intro-txt span{
   display: block;
   font-size: 16px;
   line-height: 30px;
   color: #777;
-}
-@media (max-width: 320px) {
-  .main-container .intro-txt p{
-    font-size: 28px;
-  }
+  font-weight: bold;
+  text-align: left;
 }
 /*
 intro- character / core
