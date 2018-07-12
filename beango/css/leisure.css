@@ -54,7 +54,7 @@ header{
   margin-bottom: 40px;/*for bottom  */
 }
 header #menu{
-  margin-left: 17px;
+  margin: 13px 0 2px 17px;
   padding: 0 15px;
 }
 header .logo{
@@ -1292,9 +1292,13 @@ footer .footer li{
 /* 首頁動態載入 */
 .loader{background: url(../images/spinner/spinner.gif) no-repeat center center}
 
-/* 承接頁樣式 */
+/* 承接頁樣式 start */
+.main-slideshow .group-img img{
+  width: 100%;
+  height: auto;
+}
 .main-slideshow .delivery-img{ background-image: url("../images/banner/tv-wall/BG-PC-delivery.jpg");}
-.main-slideshow .owner-img{ background-image: url("../images/banner/tv-wall/BG-PC-delivery.jpg");}
+.main-slideshow .owner-img{ background-image: url("../images/banner/tv-wall/BG-PC-owner.jpg");}
 .main-slideshow .tvwall-banner{
   position: relative;
   margin-bottom: -2%;
@@ -1326,7 +1330,7 @@ footer .footer li{
   margin: 0 auto;
   padding: 30px 0;
   max-width: 1140px;
-  width: 45%;
+  width: 48%;
 }
 .main-container .three-item .cont{
   display: initial;
@@ -1335,11 +1339,16 @@ footer .footer li{
   text-align: center;
 }
 .main-container .three-item .cont .pic i{
-  padding: 20px 13px;
-  font-size: 65px;
+  position: absolute;
+  top: 24px;
+  left: 16px;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
   color: #FFF;
 }
 .main-container .three-item .cont .pic .icon-circle{
+  position: relative;
   display: inline-block;
   width: 90px;
   height: 90px;
@@ -1367,13 +1376,21 @@ footer .footer li{
   color: #555;
 }
 .main-container .three-item .btn{
-  margin: 10px auto;
+  margin: 35px auto;
   width: 150px;
   height: 40px;
   background-color: #e61414;
   border-radius: 25px;
   color: #FFF;  
   line-height: 26px;  
+}
+.main-slideshow .group-img{
+  background-color: #000;
+}
+.main-slideshow .tvwall-title.group-txt {
+  top: 0;
+  bottom: 0;
+  color: #FFF;
 }
 @media (max-width: 1090px) {
   .main-slideshow .tvwall-title{
@@ -1425,8 +1442,9 @@ footer .footer li{
   }
 }
 @media (max-width: 575.98px) {
+  .main-slideshow .group-img{ background-image: url("../images/banner/tv-wall/BG-group.jpg");}
   .main-slideshow .delivery-img{ background-image: url("../images/banner/tv-wall/BG-delivery.jpg");}
-  .main-slideshow .owner-img{ background-image: url("../images/banner/tv-wall/BG-PC-delivery.jpg");}
+  .main-slideshow .owner-img{ background-image: url("../images/banner/tv-wall/BG-owner.jpg");}
   .main-slideshow .tvwall-banner{
     height: 17vh;
   }
@@ -1441,5 +1459,12 @@ footer .footer li{
     bottom: 0;
     height: 11vh;
   }
+  .main-slideshow .group-img img{
+    opacity: 0.8;
+  }
 }
+
+/* 承接頁樣式 end */
+
+
 

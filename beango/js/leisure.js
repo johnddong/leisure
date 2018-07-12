@@ -289,10 +289,10 @@
   //top img change on resize
   function aboutwinresize(){
     if ( document.body.clientWidth > 415 ) {
-      $("#top-img").attr('src',"beango/images/about/bn-about-pc.png");
+      $("#top-img").attr('src',"beango/images/about/bn-about-pc.png"); //about.html
     }
     else {
-      $("#top-img").attr('src',"beango/images/about/banner-about-mb.jpg");
+      $("#top-img").attr('src',"beango/images/about/banner-about-mb.jpg"); //about.html
     }
   }
   aboutwinresize();
