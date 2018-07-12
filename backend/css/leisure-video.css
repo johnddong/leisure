@@ -44,7 +44,7 @@ body,html{
   background-color: #CCC;
   cursor: pointer;
 }
-.help-video h3 .btn-drag i{
+/* .help-video h3 .btn-drag i{
   position: absolute;
   top: 0;
   bottom: 0;    
@@ -54,6 +54,28 @@ body,html{
   width: 15px;
   height: 15px;
   color: #FFF;
+} */
+.help-video h3 .btn-drag i::before{
+  background-color: #FFF;
+  width: 20px;
+  height: 4px;
+  content: '';
+  margin: -2px 0px 0px -10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 200ms ease-out 0s;
+}
+.help-video h3 .btn-drag i::after{
+  background-color: #FFF;
+  width: 4px;
+  height: 20px;
+  content: '';
+  margin: -10px 0px 0px -2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 200ms ease-out 0s;
 }
 .help-video .box-info{
   float: left;
@@ -70,8 +92,12 @@ body,html{
   background-color: #FFF;
   overflow: hidden;
 }
-.help-video .box-info.show ul{
+.help-video .open,
+.help-video .open ul{
   display: block;
+}
+.help-video .open h3 .btn-drag i::after{
+  display: none;
 }
 .help-video .box-info ul li{
   font: 14px/45px 微軟正黑體;

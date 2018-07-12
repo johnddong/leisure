@@ -3,11 +3,11 @@ $(function(){
   var helpToggle = function () {
     var $help = $('.help-video');
     $('.help-video .box-info:first i').addClass('fa-minus');
-    $('.help-video .box-info:first ul').show();
+    $('.help-video .box-info:first').addClass('open');
     $('.help-video h3 .btn-drag').on('click', function(){
         var $this = $(this);
-        $this.parents('h3').next('ul').toggle();
-        $this.find('i').toggleClass('fa-minus');
+        $('.help-video .box-info').removeClass('open');
+        $this.parents('.video-course').addClass('open');
     });
   }
 
@@ -38,7 +38,7 @@ $(function(){
         var $this = $(this);
         var $yttitle = $this.text();
         var $index = $this.parents($('.video-course')).index();
-        var video = '<video width="100%" autoplay controls><source src="'+ json[$index].video[parseInt($this.attr('idx'))].src +'" type="video/mp4"></video>';
+        var video = '<video width="100%" controls><source src="'+ json[$index].video[parseInt($this.attr('idx'))].src +'" type="video/mp4"></video>';
         $('.ytwrapper .modal-content').append(video);
     
         $yt.find('h3').text($yttitle);
