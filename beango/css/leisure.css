@@ -667,7 +667,7 @@ slideshow
 /* 導購banner */
 .index-banner{
   display: inline-block;
-  padding: 0 15px;
+  width: 100%;
 }
 .index-banner a.link{
   float: left;
@@ -675,6 +675,97 @@ slideshow
 }
 .index-banner a.link:first-child{
   margin-right: 2%;
+}
+.index-banner ul li.item .cont{
+  padding: 20px;
+  background-color: #FFF;
+  border: 1px solid #C1C1C1;
+  overflow: hidden;
+}
+.index-banner ul li.item .cont .photo{
+  float: left;
+  position: relative;
+  width: 40%;
+  height: 100%;  
+}
+.index-banner ul li.item .cont .photo i.pos-icon{
+  position: absolute;
+  left: 20px;
+  top: 32px;
+  color: #FFF;
+  font-size: 10vmin;
+}
+.index-banner ul li.item .cont .photo i.icon-circle-alt{
+  position: relative;
+  top: 20px;
+  border-radius: 120px;
+  font-size: 15vmin;
+}
+.index-banner ul li.item.group .cont .photo i.icon-circle-alt{ color: #e61414;}
+.index-banner ul li.item.owner .cont .photo i.icon-circle-alt{ color: #ff7800;}
+.index-banner ul li.item.delivery .cont .photo i.icon-circle-alt{ color: #00a4b7;}
+.index-banner ul li.item .cont .info{
+  float: left;
+  width: 55%;
+  margin-left: 5%;
+  margin-bottom: 5px;
+}
+.index-banner ul li.item .cont .info .title{
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 3.5vmin;
+  line-height: 50px;
+  font-weight: bold;
+  color: #333;
+}
+.index-banner ul li.item .cont .info span{
+  display: block;
+  padding-top: 5px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #777;
+}
+@media (max-width: 1160px) {
+  .index-banner ul li.item .cont .info span{
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 1010px) {
+  .index-banner ul li.item{
+    padding: 0 5px;
+  }
+  .index-banner ul li.item .cont .photo{
+    float: inherit;
+    width: 100%;
+    text-align: center;
+  }
+  .index-banner ul li.item .cont .photo i.pos-icon{
+    left: 0;
+    right: 0;
+  }
+  .index-banner ul li.item .cont .info{
+    float: inherit;
+    margin: 0 0 5px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 670px) {
+  .index-banner ul li.item .cont .info .title{
+    border: 0;
+    line-height: 42px;
+  }
+  .index-banner ul li.item .cont .info span{
+    display: none;
+  }
+}
+@media (max-width: 414px) {
+  .index-banner ul li.item .cont{
+    padding: 5px;
+  }
+  .index-banner ul li.item .cont .photo i.pos-icon{
+    top: 27px;
+  }
 }
 /*promo*/
 .promo-section{
