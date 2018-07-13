@@ -1,13 +1,17 @@
 $(function(){
 
   var helpToggle = function () {
-    var $help = $('.help-video');
+    var $box = $('.help-video .box-info');
     $('.help-video .box-info:first i').addClass('fa-minus');
     $('.help-video .box-info:first').addClass('open');
     $('.help-video h3 .btn-drag').on('click', function(){
         var $this = $(this);
-        $('.help-video .box-info').removeClass('open');
-        $this.parents('.video-course').addClass('open');
+        if($this.parents('.video-course').attr('class') == 'box-info video-course open') {
+          $box.removeClass('open');
+        } else{
+          $box.removeClass('open');
+          $this.parents('.video-course').addClass('open');          
+        }        
     });
   }
 
