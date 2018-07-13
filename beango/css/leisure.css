@@ -765,6 +765,13 @@ slideshow
   }
   .index-banner ul li.item .cont .photo i.pos-icon{
     top: 27px;
+    font-size: 15vmin;
+  }
+  .index-banner ul li.item .cont .photo i.icon-circle-alt{
+    font-size: 22vmin;
+  }
+  .index-banner ul li.item .cont .info .title{
+    font-size: 4.5vmin;
   }
 }
 /*promo*/
