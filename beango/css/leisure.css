@@ -1324,7 +1324,7 @@ footer .footer li{
 }
 .main-container .three-item{
   position: absolute;
-  top: -370px;
+  top: -360px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -1384,6 +1384,9 @@ footer .footer li{
   color: #FFF;  
   line-height: 26px;  
 }
+.main-container .three-item .btn a{
+  color: #FFF;
+}
 .main-slideshow .group-img{
   background-color: #000;
 }
@@ -1391,6 +1394,22 @@ footer .footer li{
   top: 0;
   bottom: 0;
   color: #FFF;
+}
+@media (max-height: 600px) {
+  .main-container .three-item{
+    top: -300px;
+  }
+  .main-container .three-item .cont .txt p{
+    font-size: 26px;
+    line-height: 46px;
+  }
+  .main-container .three-item .cont .txt span{
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .main-container .three-item .btn{
+    margin: 15px auto;
+  }
 }
 @media (max-width: 1090px) {
   .main-slideshow .tvwall-title{
