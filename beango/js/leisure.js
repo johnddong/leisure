@@ -100,18 +100,19 @@
     }
   }, 1000);
 
-  /*電視牆*/
-  var owl = $('.main-slideshow').find('.owl-carousel');
-  owl.owlCarousel({
-    items : 1,
-    loop:true,
-    autoHeight:true,
-    slideSpeed : 2000,
-    dots: true,
-    nav: true,
-    autoplay:true,
-    navText: ['<span class="flaticon-arrows-left"></span>','<span class="flaticon-arrows-right"></span>'],
-  });
+  /*電視牆*/  
+  function indexSlider() {
+    var owl = $('.main-slideshow').find('.owl-carousel');
+    owl.owlCarousel({
+      items : 1,
+      loop:true,
+      autoHeight:true,
+      slideSpeed : 2000,
+      dots: true,
+      nav: true,
+      autoplay:true,
+      navText: ['<span class="flaticon-arrows-left"></span>','<span class="flaticon-arrows-right"></span>'],
+    });
     owl.on('change.owl.carousel',function(event){
       if($(window).width() < 992)  {
         var itembackground = $(".item-background");
@@ -137,7 +138,21 @@
         }
       });
     }
+  }
+
+  (function() {
+    var _img = document.querySelector(".main-slideshow .slide-item img");
+    if(_img.complete){
+      indexSlider();
+    }else{
+      _img.onload = function(){
+        indexSlider();
+      }
+    }
+  })();
+
   /*end of 電視牆*/
+  
   $('.slider-item2').owlCarousel({
     loop:true,
     margin:10,

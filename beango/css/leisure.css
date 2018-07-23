@@ -825,7 +825,15 @@ slideshow
 .promo-section .desc{
   display: inline-block;
   width: 100%;
+  height: 43px;
   white-space: normal;
+  overflow: hidden;
+}
+.promo-section .desc a{
+  display: block;
+  width: 100%;
+  height: 43px;
+  overflow: hidden;
 }
 .promo-section .timer{
   width: 170px;
@@ -868,6 +876,7 @@ slideshow
 }
 .promo-section .grid .sale-price{
   margin-left: 0;
+  overflow: hidden;
 }
 .promo-section .grid .sale-price span{
   font-size: 25px;
@@ -1223,6 +1232,18 @@ width: 100%;
 }
 .promo-discover .item{
   margin-bottom: 10px;
+}
+.promo-discover .item .cont .info .price-group{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 43px;
+}
+.promo-discover .item .cont .info .price-group .fixed-price{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 @media (min-width: 992px) {
   .promo-discover .item{
