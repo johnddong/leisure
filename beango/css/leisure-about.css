@@ -399,8 +399,14 @@ contact
   line-height: 35px;
   color: #777;
 }
+.main-container .contact p.email{
+  font-size: 20px;
+  line-height: 28px;
+  color: #313131;
+}
 .main-container .contact a{
-  display: inline-block;
+  color: #313131;
+  /* display: inline-block;
   margin: 30px 0;
   width: 230px;
   height: 50px;;
@@ -408,10 +414,10 @@ contact
   border-radius: 25px;
   color: #FFF;
   font-size: 16px;
-  line-height: 50px;
+  line-height: 50px; */
 }
 .main-container .contact a:hover{
-  background-color: #b10000;
+  color: #b10000;
 }
 
 .back-to-top {

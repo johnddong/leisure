@@ -1472,8 +1472,6 @@ footer .footer li{
   position: absolute;
   top: 24px;
   left: 16px;
-  width: 60px;
-  height: 60px;
   font-size: 60px;
   color: #FFF;
 }
@@ -1612,6 +1610,26 @@ footer .footer li{
   }
   .main-slideshow .group-img img{
     opacity: 0.8;
+  }
+  .main-container .three-item .item{
+    max-width: 290px;
+  }
+  .main-container .three-item .cont .txt p{
+    font-size: 18px;
+  }
+  .main-container .three-item .cont .txt span{
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .main-container .three-item .cont .pic .circle{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+  }
+  .main-container .three-item .cont .pic i{
+    top: 15px;
+    left: 11px;
+    font-size: 40px;
   }
 }
 
